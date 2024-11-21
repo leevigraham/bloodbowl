@@ -1,0 +1,156 @@
+Team,Qty,Name,Cost,MA,ST,AG,PA,AV,Skills and Traits,Primary Skill Categories,Secondary Skill Categories
+Black Orc,0-12,Goblin Bruiser Linemen,45000,6,2,3+,4+,8+,"Dodge, Right Stuff, Stunty, Thick Skull",A,GPS
+Black Orc,0-6,Black Orcs,90000,4,4,4+,5+,10+,"Brawler, Grab",GS,AP
+Black Orc,0-1,Trained Troll,115000,4,5,5+,5+,10+,"Always Hungry, Loner (3+), Mighty Blow (+1), Projectile Vomit, Really Stupid, Regeneration, Throw Team-mate",S,AGP
+Chaos Chosen,0-16,Beastman Runner Linemen,60000,6,3,3+,4+,9+,Horns,GMS,AP
+Chaos Chosen,0-4,Chosen Blockers,100000,5,4,3+,5+,10+,None,GMS,A
+Chaos Chosen,0-1,Chaos Troll,115000,4,5,5+,5+,10+,"Always Hungry, Loner (4+), Mighty Blow (+1), Projectile Vomit, Really Stupid, Regeneration, Throw Team-mate",MS,AG
+Chaos Chosen,0-1,Chaos Ogre,140000,5,5,4+,5+,10+,"Bone Head, Loner (4+), Mighty Blow (+1), Thick Skull, Throw Team-mate",MS,AG
+Chaos Chosen,0-1,Minotaur,150000,5,5,4+,-,9+,"Loner (4+), Frenzy, Horns, Mighty Blow (+1), Thick Skull, Unchannelled Fury",MS,AG
+Chaos Renegades,0-12,Renegade Human Linemen,50000,6,3,3+,4+,9+,None,GM,AS
+Chaos Renegades,0-1,Renegade Human Thrower,75000,6,3,3+,3+,9+,"Animosity (all team-mates), Pass, Safe Pair of Hands",GMP,AS
+Chaos Renegades,0-1,Renegade Goblin,40000,6,2,3+,4+,8+,"Animosity (all team-mates), Dodge, Right Stuff, Stunty",AM,GP
+Chaos Renegades,0-1,Renegade Orc,50000,5,3,3+,5+,10+,Animosity (all team-mates),GM,AS
+Chaos Renegades,0-1,Renegade Skaven,50000,7,3,3+,4+,8+,Animosity (all team-mates),GM,AS
+Chaos Renegades,0-1,Renegade Dark Elf,75000,6,3,2+,3+,9+,Animosity (all team-mates),AGM,PS
+Chaos Renegades,0-1,Renegade Troll,115000,4,5,5+,5+,10+,"Always Hungry, Loner (4+), Mighty Blow (+1), Projectile Vomit, Really Stupid, Regeneration, Throw Team-mate",S,AGM
+Chaos Renegades,0-1,Renegade Ogre,140000,5,5,4+,5+,10+,"Bone Head, Loner (4+), Mighty Blow (+1), Thick Skull, Throw Team-mate",S,AGM
+Chaos Renegades,0-1,Renegade Minotaur,150000,5,5,4+,-,9+,"Loner (4+), Frenzy, Horns, Mighty Blow (+1), Thick Skull, Unchannelled Fury",S,AGM
+Chaos Renegades,0-1,Renegade Rat Ogre,150000,6,5,4+,-,9+,"Animal Savagery, Frenzy, Loner (4+), Mighty Blow (+1), Prehensile Tail",S,AGM
+Dark Elf,0-12,Dark Elf Linemen,70000,6,3,2+,4+,9+,None,AG,S
+Dark Elf,0-2,Runners,80000,7,3,2+,3+,8+,Dump-off,AGP,S
+Dark Elf,0-4,Blitzers,100000,7,3,2+,4+,9+,Block,AG,PS
+Dark Elf,0-2,Assassins,85000,7,3,2+,5+,8+,"Shadowing, Stab",AG,PS
+Dark Elf,0-2,Witch Elves,110000,7,3,2+,5+,8+,"Dodge, Frenzy, Jump Up",AG,PS
+Dwarf,0-12,Dwarf Blocker Linemen,70000,4,3,4+,5+,10+,"Block, Tackle, Thick Skull",GS,A
+Dwarf,0-2,Runners,85000,6,3,3+,4+,9+,"Sure Hands, Thick Skull",GP,AS
+Dwarf,0-2,Blitzers,80000,5,3,3+,4+,10+,"Block, Thick Skull",GS,AP
+Dwarf,0-2,Troll Slayers,95000,5,3,4+,-,9+,"Block, Dauntless, Frenzy, Thick Skull",GS,A
+Dwarf,0-1,Deathroller,170000,4,7,5+,-,11+,"Break Tackle, Dirty Player (+2), Juggernaut, Loner (5+), Mighty Blow (+1), No Hands, Secret Weapon, Stand Firm",S,AG
+Elven Union,0-12,Linemen,60000,6,3,2+,4+,8+,None,AG,S
+Elven Union,0-2,Throwers,75000,6,3,2+,2+,8+,Pass,AGP,S
+Elven Union,0-4,Catchers,100000,8,3,2+,4+,8+,"Catch, Nerves of Steel",AG,S
+Elven Union,0-2,Blitzers,115000,7,3,2+,3+,9+,"Block, Sidestep",AG,PS
+Goblin,0-16,Goblin Linemen,40000,6,2,3+,4+,8+,"Dodge, Right Stuff, Stunty",A,GPS
+Goblin,0-1,Bomma,45000,6,2,3+,4+,8+,"Bombardier, Dodge, Secret Weapon, Stunty",A,GPS
+Goblin,0-1,Looney,40000,6,2,3+,-,8+,"Chainsaw, Secret Weapon, Stunty",A,GS
+Goblin,0-1,Fanatic,70000,3,7,3+,-,8+,"Ball & Chain, No Hands, Secret Weapon, Stunty",S,AG
+Goblin,0-1,Pogoer,75000,7,2,3+,5+,8+,"Dodge, Pogo Stick, Stunty",A,GPS
+Goblin,0-1,‘Ooligan,65000,6,2,3+,6+,8+,"Dirty Player (+1), Disturbing Presence, Dodge, Right Stuff, Stunty",A,GPS
+Goblin,0-1,Doom Diver,60000,6,2,3+,6+,8+,"Right Stuff, Stunty, Swoop",A,GS
+Goblin,0-2,Trained Trolls,115000,4,5,5+,5+,10+,"Always Hungry, Loner (3+), Mighty Blow (+1), Projectile Vomit, Really Stupid, Regeneration, Throw Team-mate",S,AGP
+Halfling,0-16,Halfling Hopeful Linemen,30000,5,2,3+,4+,7+,"Dodge, Right Stuff, Stunty",A,GS
+Halfling,0-2,Halfling Heftys,50000,5,2,3+,3+,8+,"Dodge, Fend, Stunty",AP,GS
+Halfling,0-2,Halfling Catchers,55000,5,2,3+,5+,7+,"Catch, Dodge, Right Stuff, Sprint, Stunty",A,GS
+Halfling,0-2,Altern Forest Treemen,120000,2,6,5+,5+,11+,"Mighty Blow (+1), Stand Firm, Strong Arm, Take Root, Thick Skull, Throw Team-mate, Timmm-ber!",S,AGP
+Human,0-16,Human Linemen,50000,6,3,3+,4+,9+,None,G,AS
+Human,0-2,Throwers,80000,6,3,3+,2+,9+,"Pass, Sure Hands",GP,AS
+Human,0-4,Catchers,65000,8,2,3+,5+,8+,"Catch, Dodge",AG,SP
+Human,0-4,Blitzers,85000,7,3,3+,4+,9+,Block,GS,AP
+Human,0-3,Halfling Hopefuls,30000,5,2,3+,4+,7+,"Dodge, Right Stuff, Stunty",A,GS
+Human,0-1,Ogre,140000,5,5,4+,5+,10+,"Bone Head, Loner (4+), Mighty Blow (+1), Thick Skull, Throw Team-mate",S,AG
+Imperial Nobility,0-12,Imperial Retainer Linemen,45000,6,3,4+,4+,8+,Fend,G,AS
+Imperial Nobility,0-2,Imperial Throwers,75000,6,3,3+,3+,9+,"Pass, Running Pass",GP,AS
+Imperial Nobility,0-2,Noble Blitzers,105000,7,3,3+,4+,9+,"Block, Catch",AG,PS
+Imperial Nobility,0-4,Bodyguards,90000,6,3,3+,5+,9+,"Stand Firm, Wrestle",GS,A
+Imperial Nobility,0-1,Ogre,140000,5,5,4+,5+,10+,"Bone Head, Loner (4+), Mighty Blow (+1), Thick Skull, Throw Team-mate",S,AG
+Lizardmen,0-12,Skink Runner Linemen,60000,8,2,3+,4+,8+,"Dodge, Stunty",A,GPS
+Lizardmen,0-2,Chameleon Skinks,70000,7,2,3+,3+,8+,"Dodge, On the Ball, Shadowing, Stunty",A,GPS
+Lizardmen,0-6,Saurus Blockers,85000,6,4,5+,6+,10+,None,GS,A
+Lizardmen,0-1,Kroxigor,140000,6,5,5+,-,10+,"Bone Head, Loner (4+), Mighty Blow (+1), Prehensile Tail, Thick Skull",S,AG
+Necromantic Horror,0-16,Zombie Linemen,40000,4,3,4+,-,9+,Regeneration,G,AS
+Necromantic Horror,0-2,Ghoul Runners,75000,7,3,3+,4+,8+,Dodge,AG,PS
+Necromantic Horror,0-2,Wraiths,95000,6,3,3+,-,9+,"Block, Foul Appearance, No Hands, Regeneration, Sidestep",GS,A
+Necromantic Horror,0-2,Werewolves,125000,8,3,3+,4+,9+,"Claws, Frenzy, Regeneration",AG,PS
+Necromantic Horror,0-2,Flesh Golems,115000,4,4,4+,-,10+,"Regeneration, Stand Firm, Thick Skull",GS,A
+Nurgle,0-12,Rotter Linemen,35000,5,3,4+,6+,9+,"Decay, Plague Ridden",GM,AS
+Nurgle,0-4,Pestigors,75000,6,3,3+,4+,9+,"Horns, Plague Ridden, Regeneration",GMS,AP
+Nurgle,0-4,Bloaters,115000,4,4,4+,6+,10+,"Disturbing Presence, Foul Appearance, Plague Ridden, Regeneration",GMS,A
+Nurgle,0-1,Rotspawn,140000,4,5,5+,-,10+,"Disturbing Presence, Foul Appearance, Loner (4+), Mighty Blow (+1), Plague Ridden, Really Stupid, Regeneration, Tentacles",S,AGM
+Ogre,0-16,Gnoblar Linemen,15000,5,1,3+,5+,6+,"Dodge, Right Stuff, Sidestep, Stunty, Titchy",A,G
+Ogre,0-1,Ogre Runt Punter,145000,5,5,4+,4+,10+,"Bone Head, Kick Team-mate, Mighty Blow (+1), Thick Skull",PS,AG
+Ogre,0-5,Ogre Blockers,140000,5,5,4+,5+,10+,"Bone Head, Mighty Blow (+1), Thick Skull, Throw Team-mate",S,AGP
+Old World Alliance,0-12,Old World Human Linemen,50000,6,3,3+,4+,9+,None,G,AS
+Old World Alliance,0-1,Old World Human Thrower,80000,6,3,3+,3+,9+,"Animosity (all Dwarf and Halfling team-mates), Pass, Sure Hands",GP,AS
+Old World Alliance,0-1,Old World Human Catcher,65000,8,2,3+,5+,8+,"Animosity (all Dwarf and Halfling team-mates), Catch, Dodge",AG,S
+Old World Alliance,0-1,Old World Human Blitzer,90000,7,3,3+,4+,9+,"Animosity (all Dwarf and Halfling team-mates), Block",GS,A
+Old World Alliance,0-2,Old World Dwarf Blockers,75000,4,3,4+,5+,10+,"Arm Bar, Brawler, Loner (3+), Thick Skull",GS,A
+Old World Alliance,0-1,Old World Dwarf Runner,85000,6,3,3+,4+,9+,"Loner (3+), Sure Hands, Thick Skull",GP,AS
+Old World Alliance,0-1,Old World Dwarf Blitzer,80000,5,3,3+,4+,10+,"Block, Loner (3+), Thick Skull",GS,A
+Old World Alliance,0-1,Old World Dwarf Troll Slayer,95000,5,3,4+,-,9+,"Block, Dauntless, Frenzy, Loner (3+), Thick Skull",GS,A
+Old World Alliance,0-2,Old World Halfling Hopeful,30000,5,2,3+,4+,7+,"Animosity (all Dwarf and Human team-mates), Dodge, Right Stuff, Stunty",A,GS
+Old World Alliance,0-1,Ogre,140000,5,5,4+,5+,10+,"Bone Head, Loner (4+), Mighty Blow (+1), Thick Skull, Throw Team-mate",S,AG
+Old World Alliance,0-1,Altern Forest Treeman,120000,2,6,5+,5+,11+,"Loner (4+), Mighty Blow (+1), Stand Firm, Strong Arm, Take Root, Thick Skull, Throw Team-mate, Timmm-ber!",S,AGP
+Orc,0-16,Orc Linemen,50000,5,3,3+,4+,10+,Animosity (Orc Linemen),G,AS
+Orc,0-2,Throwers,65000,5,3,3+,3+,9+,"Animosity (all team-mates), Pass, Sure Hands",GP,AS
+Orc,0-4,Blitzers,80000,6,3,3+,4+,10+,"Animosity (all team-mates), Block",GS,AP
+Orc,0-4,Big Un Blockers,90000,5,4,4+,-,10+,Animosity (Big Un Blockers),GS,A
+Orc,0-4,Goblins,40000,6,2,3+,4+,8+,"Dodge, Right Stuff, Stunty",A,GS
+Orc,0-1,Untrained Troll,115000,4,5,5+,5+,10+,"Always Hungry, Loner (4+), Mighty Blow (+1), Projectile Vomit, Really Stupid, Regeneration, Throw Team-mate",S,AGP
+Shambling Undead,0-12,Skeleton Linemen,40000,5,3,4+,6+,8+,"Regeneration, Thick Skull",G,AS
+Shambling Undead,0-12,Zombie Linemen,40000,4,3,4+,-,9+,Regeneration,G,AS
+Shambling Undead,0-4,Ghoul Runners,75000,7,3,3+,4+,8+,Dodge,AG,PS
+Shambling Undead,0-2,Wight Blitzers,90000,6,3,3+,5+,9+,"Block, Regeneration",GS,AP
+Shambling Undead,0-2,Mummies,125000,3,5,5+,-,10+,"Mighty Blow (+1), Regeneration",S,AG
+Skaven,0-16,Skaven Clanrat Linemen,50000,7,3,3+,4+,8+,None,G,AMS
+Skaven,0-2,Throwers,85000,7,3,3+,2+,8+,"Pass, Sure Hands",GP,AMS
+Skaven,0-4,Gutter Runners,85000,9,2,2+,4+,8+,Dodge,AG,MPS
+Skaven,0-2,Blitzers,90000,7,3,3+,5+,9+,Block,GS,AMP
+Skaven,0-1,Rat Ogre,150000,6,5,4+,-,9+,"Animal Savagery, Frenzy, Loner (4+), Mighty Blow (+1), Prehensile Tail",S,AGM
+Snotling,0-16,Snotling Linemen,15000,5,1,3+,5+,6+,"Dodge, Right Stuff, Sidestep, Stunty, Swarming, Titchy",A,G
+Snotling,0-2,Fungus Flingas,30000,5,1,3+,4+,6+,"Bombardier, Dodge, Right Stuff, Secret Weapon, Sidestep, Stunty",AP,G
+Snotling,0-2,Fun-hoppas,20000,6,1,3+,5+,6+,"Dodge, Pogo Stick, Right Stuff, Sidestep, Stunty",A,G
+Snotling,0-2,Stilty Runnas,20000,6,1,3+,5+,6+,"Dodge, Right Stuff, Sidestep, Sprint, Stunty",A,G
+Snotling,0-2,Pump Wagons,105000,4,5,5+,-,9+,"Dirty Player (+1), Juggernaut, Mighty Blow (+1), Really Stupid, Secret Weapon, Stand Firm",S,AG
+Snotling,0-2,Trained Trolls,115000,4,5,5+,5+,10+,"Always Hungry, Loner (3+), Mighty Blow (+1), Projectile Vomit, Really Stupid, Regeneration, Throw Team-mate",S,AGP
+Underworld Denizens,0-12,Underworld Goblin Linemen,40000,6,2,3+,4+,8+,"Dodge, Right Stuff, Stunty",AM,GS
+Underworld Denizens,0-6,Underworld Snotlings,15000,5,1,3+,5+,6+,"Dodge, Right Stuff, Sidestep, Stunty, Swarming, Titchy",A,G
+Underworld Denizens,0-3,Skaven Clanrat,50000,7,3,3+,4+,8+,Animosity (Underworld Goblin Linemen),GM,AS
+Underworld Denizens,0-1,Skaven Thrower,85000,7,3,3+,2+,8+,"Animosity (Underworld Goblin Linemen), Pass, Sure Hands",GMP,AS
+Underworld Denizens,0-1,Gutter Runner,85000,9,2,2+,4+,8+,"Animosity (Underworld Goblin Linemen), Dodge",AGM,PS
+Underworld Denizens,0-1,Skaven Blitzer,90000,7,3,3+,5+,9+,"Animosity (Underworld Goblin Linemen), Block",GMS,AP
+Underworld Denizens,0-1,Underworld Troll,115000,4,5,5+,5+,10+,"Always Hungry, Loner (4+), Mighty Blow (+1), Projectile Vomit, Really Stupid, Regeneration, Throw Team-mate",MS,AGP
+Underworld Denizens,0-1,Mutant Rat Ogre,150000,6,5,4+,-,9+,"Animal Savagery, Frenzy, Loner (4+), Mighty Blow (+1), Prehensile Tail",MS,AG
+Wood Elf,0-12,Wood Elf Linemen,70000,7,3,2+,4+,8+,None,AG,S
+Wood Elf,0-2,Throwers,95000,7,3,2+,2+,8+,Pass,AGP,S
+Wood Elf,0-4,Catchers,90000,8,2,2+,4+,8+,"Catch, Dodge",AG,PS
+Wood Elf,0-2,Wardancers,125000,8,3,2+,4+,8+,"Block, Dodge, Leap",AG,PS
+Wood Elf,0-1,Loren Forest Treeman,120000,2,6,5+,5+,11+,"Loner (4+), Mighty Blow (+1), Stand Firm, Strong Arm, Take Root, Thick Skull, Throw Team-mate",S,AG
+Chaos Dwarf,0-16,Hobgoblin Lineman,40000,6,3,3+,4+,8+,None,G,AS
+Chaos Dwarf,0-2,Hobgoblin Sneaky Stabba,70000,6,3,3+,5+,8+,"Shadowing, Stab",G,AS
+Chaos Dwarf,0-4,Chaos Dwarf Blocker,70000,4,3,4+,6+,10+,"Block, Iron Hard Skin, Thick Skull",GS,AM
+Chaos Dwarf,0-2,Chaos Dwarf Flamesmith,80000,5,3,4+,6+,10+,"Brawler, Breathe Fire, Disturbing Presence, Thick Skull",GS,AM
+Chaos Dwarf,0-2,Bull Centaur Blitzer,130000,6,4,4+,6+,10+,"Sprint, Sure Feet, Thick Skull",GS,AM
+Chaos Dwarf,0-1,Minotaur,150000,5,5,4+,-,9+,"Frenzy, Horns, Loner (4+), Mighty Blow (+1), Thick Skull, Unchannelled Fury",S,AGM
+Amazon,0-16,Eagle Warrior Linewoman,50000,6,3,3+,4+,8+,Dodge,G,AS
+Amazon,0-2,Python Warrior Throwers,80000,6,3,3+,3+,8+,"Dodge, On the Ball, Pass, Safe Pass",GP,AS
+Amazon,0-2,Piranha Warrior Blitzers,90000,7,3,3+,5+,8+,"Dodge, Hit and Run, Jump Up",AG,S
+Amazon,0-2,Jaguar Warrior Blockers,110000,6,4,3+,5+,9+,"Defensive, Dodge",GS,A
+Vampire,0-16,Thrall Lineman,40000,6,3,3+,4+,8+,None,G,AS
+Vampire,0-2,Vampire Runner,100000,8,3,2+,4+,8+,"Bloodlust (2+),Hypnotic Gaze,Regeneration",AG,SP
+Vampire,0-2,Vampire Blitzer,110000,6,4,2+,5+,9+,"Bloodlust (3+),Hypnotic Gaze,Juggernaut,Regeneration",AGS,P
+Vampire,0-2,Vampire Thrower,110000,6,4,2+,2+,9+,"Bloodlust (2+),Hypnotic Gaze,Pass,Regeneration",AGP,S
+Vampire,0-1,Vargheist,150000,5,5,4+,-,10+,"Bloodlust (3+),Claws,Frenzy,Loner (4+),Regeneration",S,AG
+Norse,0-16,Norse Raider Lineman,50000,6,3,3+,4+,8+,"Block, Drunkard, Thick Skull",G,APS
+Norse,0-2,Beer Boar,20000,5,1,3+,-,6+,"Dodge, No Hands, Pick-me-up, Stunty, Titchy","",A
+Norse,0-2,Norse Berzerker,90000,6,3,3+,5+,8+,"Block, Frenzy, Jump Up",GS,AP
+Norse,0-2,Valkyrie,95000,7,3,3+,3+,8+,"Catch, Dauntless, Pass, Strip Ball",AGP,S
+Norse,0-2,Ulfwerener,105000,6,4,4+,-,9+,Frenzy,GS,A
+Norse,0-1,Yhetee,140000,5,5,4+,-,9+,"Claws, Disturbing Presence, Frenzy, Loner (4+), Unchannelled Fury",S,AG
+Gnome,0-16,Gnome Lineman,40000,5,2,3+,4+,7+,"Jump Up, Right Stuff, Stunty, Wrestle",A,GS
+Gnome,0-2,Gnome Beastmaster,55000,5,2,3+,4+,8+,"Guard, Jump Up, Stunty, Wrestle",A,GS
+Gnome,0-2,Gnome Illusionist,50000,5,2,3+,3+,7+,"Jump Up, Stunty, Trickster, Wrestle",AP,G
+Gnome,0-2,Woodland Fox,50000,7,2,2+,-,6+,"Dodge, My Ball, Sidestep, Stunty",,A
+Gnome,0-2,Altern Forest Treeman,120000,2,6,5+,5+,11+,"Mighty Blow (+1), Stand Firm, Strong Arm, Take Root, Thick Skull, Throw Team-mate, Timmm-ber!",S,AGP
+Khorne,0-16,Bloodborn Marauder Lineman,50000,6,3,3+,4+,8+,Frenzy,GM,AS
+Khorne,0-4,Khorngor,70000,6,3,3+,4+,9+,"Horns, Juggernaut",GMS,AP
+Khorne,0-4,Bloodseeker,110000,5,4,4+,6+,10+,Frenzy,GMS,A
+Khorne,0-1,Bloodspawn,160000,5,5,4+,-,9+,"Claws, Frenzy, Loner (4+), Mighty Blow (+1), Unchannelled Fury",MS,AG
+High Elf,0-16,Lineman,70000,6,3,2+,4+,9+,,AG,PS
+High Elf,0-4,Catcher,90000,8,3,2+,5+,8+,"Catch",AG,S
+High Elf,0-2,Thrower,100000,6,3,2+,2+,9+,"Cloud Burster, Pass, Safe Pass",AGP,S
+High Elf,0-2,Blitzer,100000,7,3,2+,4+,9+,"Block",AG,PS
+Tomb Kings,0-16,Skeleton Lineman,40000,5,3,4+,6+,8+,"Regeneration, Thick Skull",G,AS
+Tomb Kings,0-4,Tomb Guardian,100000,4,5,5+,-,10+,"Decay, Regeneration",S,AG
+Tomb Kings,0-2,Anointed Thrower,70000,6,3,4+,3+,8+,"Pass, Regeneration, Sure Hands, Thick Skull",GP,A
+Tomb Kings,0-2,Anointed Blitzer,90000,6,3,4+,6+,9+,"Block, Regeneration, Thick Skull",GS,AP
