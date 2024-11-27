@@ -1,0 +1,44 @@
+<details id="{{ specialRule.slug }}" class="special-rule">
+    <summary>
+        <h3 class="heading-5">
+            {{ specialRule.name }}
+            <small>({{ specialRule.category.label }})</small>
+        </h3>
+    </summary>
+    <div>
+        {{ specialRule.ruleBookDescription|markdown_to_html }}
+        <dl>
+            <dt>Teams:</dt>
+            <dd>
+                {% if specialRule.teams|length %}
+                    <ul>
+                        {% for team in specialRule.teams %}
+                            <li><a href="#{{ team.slug }}">{{ team.name }}</a></li>
+                        {% endfor %}
+                    </ul>
+                {% else %}
+                    None
+                {% endif %}
+            </dd>
+            <dt>Star Players:</dt>
+            <dd>
+                {% if specialRule.starPlayerPositions|length %}
+                    <ul>
+                        {% for player in specialRule.starPlayerPositions %}
+                            <li>
+                                <a href="#{{ player.slug }}"
+                                   data-controller="fragment-dialog-trigger"
+                                   data-action="fragment-dialog-trigger#show"
+                                >
+                                    {{ player.name }}
+                                </a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% else %}
+                    None
+                {% endif %}
+            </dd>
+        </dl>
+    </div>
+</details>

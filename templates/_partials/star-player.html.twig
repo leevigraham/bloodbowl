@@ -1,0 +1,91 @@
+<details id="{{ player.slug }}" class="star-player">
+    <summary>
+        <h3 class="heading-5">
+            {{ player.name }}
+            {% if player.megaStar %}
+                <small class="badge">Mega Star</small>
+            {% endif %}
+        </h3>
+    </summary>
+    <div>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                <tr>
+                    <th scope="col" style="width: 1px; white-space: nowrap">Cost</th>
+                    <th scope="col" style="width: 1px; white-space: nowrap">MA</th>
+                    <th scope="col" style="width: 1px; white-space: nowrap">ST</th>
+                    <th scope="col" style="width: 1px; white-space: nowrap">AG</th>
+                    <th scope="col" style="width: 1px; white-space: nowrap">PA</th>
+                    <th scope="col" style="width: 1px; white-space: nowrap">AV</th>
+                    <th scope="col">Skills</th>
+                    <th scope="col">Traits</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>{{ player.cost|format_number({grouping_used:true}, locale='en') }}</td>
+                    <td>{{ player.MA }}</td>
+                    <td>{{ player.ST }}</td>
+                    <td>{{ player.AG }}</td>
+                    <td>{{ player.PA }}</td>
+                    <td>{{ player.AV }}</td>
+                    <td class="nowrap">
+                        {% if player.skills|length %}
+                            <ul>
+                                {% for label, skill in player.skills %}
+                                    <li>
+                                        <a href="#{{ skill.slug }}"
+                                           data-controller="fragment-dialog-trigger"
+                                           data-action="fragment-dialog-trigger#show"
+                                        >{{ label }}</a>
+                                        {% if skill.compulsory %}
+                                            <span>*</span>
+                                        {% endif %}
+                                        <small>({{ skill.category.value }})</small>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                    </td>
+                    <td class="nowrap">
+                        {% if player.traits|length %}
+                            <ul>
+                                {% for label, trait in player.traits %}
+                                    <li>
+                                        <a href="#{{ trait.slug }}" data-controller="fragment-dialog-trigger"
+                                           data-action="fragment-dialog-trigger#show">{{ label }}</a>
+                                        {% if trait.compulsory %}
+                                            <span>*</span>
+                                        {% endif %}
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <dl>
+            <dt>Special Rules:</dt>
+            <dd>{{ player.specialRules }}</dd>
+            <dt>Mega Star:</dt>
+            <dd>{{ player.megaStar ? 'YES' : 'NO' }}</dd>
+            <dt>Source:</dt>
+            <dd>{{ player.source }}</dd>
+            <dt>Plays For:</dt>
+            <dd>{{ player.playsForRuleWithLinks|raw }}</dd>
+            <dt>Plays For (teams):</dt>
+            <dd>
+                <ul>
+                    {% for team in player.teams %}
+                        <li><a href="#{{ team.slug }}">{{ team.name }}</a></li>
+                    {% endfor %}
+                </ul>
+            </dd>
+        </dl>
+        {% set designersCommentary = data.designersCommentary|filter(c => c.starPlayer == player.name) %}
+        {{ include('_partials/designers-commentary.html.twig', {designersCommentary}) }}
+    </div>
+</details>

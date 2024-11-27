@@ -1,0 +1,56 @@
+<details id="{{ skill.slug }}" class="player-skill">
+    <summary>
+        <h3 class="heading-5">
+            {{ skill.name }}
+            {% if skill.compulsory %}
+                <span>*</span>
+            {% endif %}
+            <small class="badge">{{ skill.category.label|default('Trait') }}</small>
+            {% if skill.compulsory|default %}
+                <small class="badge">Compulsory</small>
+            {% endif %}
+        </h3>
+    </summary>
+    <div>
+        {{ skill.ruleBookDescription|markdown_to_html }}
+        <dl>
+            <dt>Player positions:</dt>
+            <dd>
+                {% if skill.playerPositions|length %}
+                    <ul>
+                        {% for playerPosition in skill.playerPositions %}
+                            <li>
+                                <a href="#{{ playerPosition.slug }}">
+                                    {{- playerPosition.name -}}
+                                </a>
+                                &ndash;
+                                {{ playerPosition.team.name }}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% else %}
+                    None
+                {% endif %}
+            </dd>
+            <dt>Star Players:</dt>
+            <dd>
+                {% if skill.starPlayerPositions|length %}
+                    <ul>
+                        {% for playerPosition in skill.starPlayerPositions %}
+                            <li>
+                                <a href="#{{ playerPosition.slug }}"
+                                   data-controller="fragment-dialog-trigger"
+                                   data-action="fragment-dialog-trigger#show"
+                                >
+                                    {{- playerPosition.name -}}
+                                </a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% else %}
+                    None
+                {% endif %}
+            </dd>
+        </dl>
+    </div>
+</details>

@@ -1,0 +1,9 @@
+<h3>Star Players</h3>
+<p>This section provides details of all of the Star Players currently available for your Blood Bowl teams to Induce, their profiles, Skills, special rules and teams they will play for. Future Blood Bowl supplements will include new Star Players for many rosters, so there will always be new superstars and celebrities popping up on the circuit!</p>
+{% for starPlayer in [
+    'The Black Gobbo',
+    'Deeproot Strongbranch',
+    'Eldril Sidewinder',
+] %}
+{{ include('_partials/star-player.html.twig', {player: data.starPlayerPositions[starPlayer]}) }}
+{% endfor %}

@@ -1,0 +1,9 @@
+{% for starPlayer in [
+    'Mighty Zug',
+    'Morg ‘n’ Thorg',
+    'Roxanna Darknail',
+    'Rumbelow Sheepskin',
+    'Skrull Halfheight',
+] %}
+    {{ include('_partials/star-player.html.twig', {player: data.starPlayerPositions[starPlayer]}) }}
+{% endfor %}

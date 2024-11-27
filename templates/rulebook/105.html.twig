@@ -1,0 +1,21 @@
+<h3>Blood Bowl Teams</h3>
+<p>This section contains the rosters used to draft a rookie Blood Bowl team of your own for use in league play. It explains the special rules of different types that all teams have, detailing the advantages and disadvantages these bring to a team. Finally, it also briefly explains 'tiers', a method used to give an idea of the relative strengths and weaknesses of rookie Blood Bowl teams.</p>
+<h4>Special Rules</h4>
+<p>Most Blood Bowl teams are, despite appearances, quite straightforward in their behaviour and approach to the great game. Others are not. Be they the reanimated dead, devotees of the Dark Gods or corrupt Greenskins, many teams differ somewhat from the norm.</p>
+<p>Special rules to help represent the different nuances of races and teams fall into two categories: the first, 'Regional' special rules, are named after famous leagues or competitions, and these are attached to teams that traditionally play in those leagues. Their purpose is to make it easy to determine which Inducements a team can or cannot take, thus simplifying the almost impenetrably complicated rules and regulations of the NAF.</p>
+<p>The second category, 'Team' special rules, contains more complex rules. These deal with a unique characteristic of the team, something that sets it apart from others. These special rules grant the team certain benefits not enjoyed by other teams.</p>
+<h5>Regional Special Rules</h5>
+<p>As noted in their description, some Inducements are available only to teams with one of the following special rules. Other Inducements may be available for a reduced rate to teams with one of the following special rules. All teams have one or more of the following special rules:</p>
+
+{% for specialRule in [
+    'Badlands Brawl',
+    'Elven Kingdoms League',
+    'Halfling Thimble Cup',
+    'Lustrian Superleague',
+    'Old World Classic',
+    'Sylvanian Spotlight',
+    'Underworld Challenge',
+    'Worlds Edge Superleague',
+] %}
+    {{ include('_partials/special-rule.html.twig', { specialRule: data.specialRules[specialRule]}) }}
+{% endfor %}

@@ -1,0 +1,10 @@
+{% for starPlayer in [
+    'Glart Smashrip',
+    'Gloriel Summerbloom',
+    'Grak',
+    'Crumbleberry',
+    'Gretchen Wächter \'The Blood Bowl Widow\'',
+    'Griff Oberwald',
+] %}
+    {{ include('_partials/star-player.html.twig', {player: data.starPlayerPositions[starPlayer]}) }}
+{% endfor %}

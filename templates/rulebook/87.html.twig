@@ -1,0 +1,11 @@
+{% for skill in [
+    'Swarming',
+    'Swoop',
+    'Take Root',
+    'Titchy',
+    'Throw Team-Mate',
+    'Timmm-ber!',
+    'Unchannelled Fury',
+] %}
+    {{ include('_partials/skill-or-trait.html.twig', { skill: data.playerSkillsAndTraits[skill] }) }}
+{% endfor %}

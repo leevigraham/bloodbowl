@@ -26,32 +26,42 @@ class PublishCommand extends Command
     {
         $io = new SymfonyStyle($input, $output);
 
-        // Generate the route URL
-        $routeUrl = $this->router->generate('default_index', [], RouterInterface::ABSOLUTE_URL);
+        $src = dirname(__DIR__, 2) . '/public/images/*.{png,jpg}';
+        $dest = dirname(__DIR__, 2) . '/docs/images/';
+        shell_exec("cp -r $src $dest");
 
-        // Create a sub-request
-        $request = Request::create($routeUrl);
+        foreach([
+            'index' => 'index.html',
+            'reference' => 'reference.html',
+            'rule-book' => 'rule-book.html',
+        ] as $route => $fileName) {
+            // Generate the route URL
+            $routeUrl = $this->router->generate($route, [], RouterInterface::ABSOLUTE_URL);
 
-        // Handle the sub-request
-        $response = $this->httpKernel->handle($request, HttpKernelInterface::SUB_REQUEST);
+            // Create a sub-request
+            $request = Request::create($routeUrl);
 
-        // Check if the response is successful
-        if (!$response->isSuccessful()) {
-            $io->error('Failed to fetch the HTML content from the route.');
-            return Command::FAILURE;
+            // Handle the sub-request
+            $response = $this->httpKernel->handle($request, HttpKernelInterface::SUB_REQUEST);
+
+            // Check if the response is successful
+            if (!$response->isSuccessful()) {
+                $io->error('Failed to fetch the HTML content from the route.');
+                return Command::FAILURE;
+            }
+
+            // Save the HTML content to a file
+            $htmlContent = $response->getContent();
+
+            $filePath = dirname(__DIR__, 2) . '/docs/' . $fileName;
+            if (false === file_put_contents($filePath, $htmlContent)) {
+                $io->error('Failed to write the HTML content to the file.');
+                return Command::FAILURE;
+            }
+
+            $io->success("HTML content saved successfully to $filePath");
         }
 
-        // Save the HTML content to a file
-        $htmlContent = $response->getContent();
-
-        $filePath = dirname(__DIR__, 2) . '/docs/index.html';
-        if (false === file_put_contents($filePath, $htmlContent)) {
-            $io->error('Failed to write the HTML content to the file.');
-            return Command::FAILURE;
-        }
-
-        $io->success("HTML content saved successfully to $filePath");
         return Command::SUCCESS;
-
     }
 }

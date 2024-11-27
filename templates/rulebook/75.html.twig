@@ -1,0 +1,17 @@
+<h4>Agility Skills</h4>
+{% for skill in [
+    'Catch',
+    'Diving Catch',
+    'Diving Tackle',
+    'Dodge',
+    'Defensive',
+    'Jump Up',
+    'Leap',
+    'Safe Pair of Hands',
+    'Sidestep',
+    'Sneaky Git',
+    'Sprint',
+    'Sure Feet',
+] %}
+    {{ include('_partials/skill-or-trait.html.twig', { skill: data.playerSkillsAndTraits[skill] }) }}
+{% endfor %}

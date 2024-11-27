@@ -1,0 +1,62 @@
+<div class="table-wrapper">
+    <table class="nowrap">
+        <caption>Skill Table</caption>
+        <thead>
+        <tr>
+            <th scope="col">1st D6</th>
+            <th scope="col">2nd D6</th>
+            <th scope="col">Agility</th>
+            <th scope="col">General</th>
+            <th scope="col">Mutations</th>
+            <th scope="col">Passing</th>
+            <th scope="col">Strength</th>
+        </thead>
+        <tbody>
+        {% for d1, group in data.playerSkillsTable %}
+            {% for d2, cols in group %}
+                <tr>
+                    {% if d2 == 1 %}
+                        <th rowspan="6">{{ d1 }}</th>
+                    {% endif %}
+                    <td>{{ d2 }}</td>
+                    <td>
+                        <a href="#{{ cols.A.slug }}"
+                           data-controller="fragment-dialog-trigger"
+                           data-action="fragment-dialog-trigger#show"
+                        >{{ cols.A.name }}</a>
+                        {% if cols.A.compulsory %}*{% endif %}
+                    </td>
+                    <td>
+                        <a href="#{{ cols.G.slug }}"
+                           data-controller="fragment-dialog-trigger"
+                           data-action="fragment-dialog-trigger#show"
+                        >{{ cols.G.name }}</a>
+                        {% if cols.G.compulsory %}*{% endif %}
+                    </td>
+                    <td>
+                        <a href="#{{ cols.M.slug }}"
+                           data-controller="fragment-dialog-trigger"
+                           data-action="fragment-dialog-trigger#show"
+                        >{{ cols.M.name }}</a>
+                        {% if cols.M.compulsory %}*{% endif %}
+                    </td>
+                    <td>
+                        <a href="#{{ cols.P.slug }}"
+                           data-controller="fragment-dialog-trigger"
+                           data-action="fragment-dialog-trigger#show"
+                        >{{ cols.P.name }}</a>
+                        {% if cols.P.compulsory %}*{% endif %}
+                    </td>
+                    <td>
+                        <a href="#{{ cols.S.slug }}"
+                           data-controller="fragment-dialog-trigger"
+                           data-action="fragment-dialog-trigger#show"
+                        >{{ cols.S.name }}</a>
+                        {% if cols.S.compulsory %}*{% endif %}
+                    </td>
+                </tr>
+            {% endfor %}
+        {% endfor %}
+        </tbody>
+    </table>
+</div>

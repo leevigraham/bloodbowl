@@ -1,0 +1,18 @@
+{% set bodyClass = 'rulebook' %}
+{% set title = 'Blood Bowl 2020 - Rule Book' %}
+{% extends 'base.html.twig' %}
+{% block body %}
+    <header>
+        <h1 style="margin-block: 0">{{ title }}</h1>
+    </header>
+    <main>
+        {% for p in 1..133 %}
+            <div id="p{{ p }}" class="page">
+                <a href="#p{{ p }}" class="page-number">#{{ p }}</a>
+                {{ include("rulebook/#{p}.html.twig", ignore_missing = true) ?: '<p>[REDACTED] - Refer to official Rule Book</p>' }}
+                {% set designersCommentary = data.designersCommentary|filter(c => c.pageRef == p and c.documentRef == 'Blood Bowl Rule Book - 2020') %}
+                {{ include('_partials/designers-commentary.html.twig', {designersCommentary}) }}
+            </div>
+        {% endfor %}
+    </main>
+{% endblock %}

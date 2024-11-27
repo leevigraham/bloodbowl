@@ -1,0 +1,8 @@
+<h4>Traits</h4>
+{% for skill in [
+    'Animal Savagery',
+    'Animosity (X)',
+    'Always Hungry',
+] %}
+    {{ include('_partials/skill-or-trait.html.twig', { skill: data.playerSkillsAndTraits[skill] }) }}
+{% endfor %}

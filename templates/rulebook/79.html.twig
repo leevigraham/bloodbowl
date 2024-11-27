@@ -1,0 +1,17 @@
+<h4>Passing Skills</h4>
+{% for skill in [
+    'Accurate',
+    'Cannoneer',
+    'Cloud Burster',
+    'Dump-Off',
+    'Fumblerooskie',
+    'Hail Mary Pass',
+    'Leader',
+    'Nerves of Steel',
+    'On the Ball',
+    'Pass',
+    'Running Pass',
+    'Safe Pass',
+] %}
+    {{ include('_partials/skill-or-trait.html.twig', { skill: data.playerSkillsAndTraits[skill] }) }}
+{% endfor %}
