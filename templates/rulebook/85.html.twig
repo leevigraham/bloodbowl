@@ -1,0 +1,10 @@
+{% for skill in [
+    'Hypnotic Gaze',
+    'Kick Team-Mate',
+    'Loner (X+)',
+    'No Hands',
+    'Plague Ridden',
+    'Pogo Stick',
+] %}
+    {{ include('_partials/skill-or-trait.html.twig', { skill: data.playerSkillsAndTraits[skill] }) }}
+{% endfor %}

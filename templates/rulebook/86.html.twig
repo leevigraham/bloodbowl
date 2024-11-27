@@ -1,0 +1,11 @@
+{% for skill in [
+    'Projectile Vomit',
+    'Really Stupid',
+    'Regeneration',
+    'Right Stuff',
+    'Secret Weapon',
+    'Stab',
+    'Stunty',
+] %}
+    {{ include('_partials/skill-or-trait.html.twig', { skill: data.playerSkillsAndTraits[skill] }) }}
+{% endfor %}

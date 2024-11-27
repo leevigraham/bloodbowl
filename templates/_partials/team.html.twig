@@ -1,0 +1,189 @@
+<details id="{{ team.slug }}"
+         class="team"
+         data-controller="team-table"
+>
+    <summary>
+        <h3 class="heading-5">{{ team.name }} Team</h3>
+    </summary>
+    <div>
+        {{ team.ruleBookDescription|markdown_to_html }}
+        <dl>
+            <dt>Special Rules:</dt>
+            <dd>{{ team.getSpecialRulesSummaryWithLinks|raw ?: 'None' }}</dd>
+            <dt>Additional Rules:</dt>
+            <dd>{{ team.additionalRules ? team.additionalRules : 'None' }}</dd>
+            <dt>Tier:</dt>
+            <dd>{{ team.tier }}</dd>
+            <dt>Re-rolls Qty:</dt>
+            <dd>0-8</dd>
+            <dt>Re-rolls Cost:</dt>
+            <dd>{{ team.reRollCost|format_number({grouping_used:true}, locale='en') }}</dd>
+            <dt>Apothecary:</dt>
+            <dd>{{ team.canHaveApothecary ? 'Yes' : 'No' }}</dd>
+            <dt>Source:</dt>
+            <dd>{{ team.source }}</dd>
+        </dl>
+        <h4>Players</h4>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                <tr>
+                    <th scope="col">Qty</th>
+                    <th scope="col">Position</th>
+                    <th scope="col">Cost</th>
+                    <th scope="col">MA</th>
+                    <th scope="col">ST</th>
+                    <th scope="col">AG</th>
+                    <th scope="col">PA</th>
+                    <th scope="col">AV</th>
+                    <th scope="col">Skills</th>
+                    <th scope="col">Traits</th>
+                    <th scope="col">Primary</th>
+                    <th scope="col">Secondary</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for player in team.playerPositions %}
+                    <tr id="{{ player.slug }}">
+                        <td style="white-space: nowrap">{{ player.qty }}</td>
+                        <th scope="row">{{ player.name }}</th>
+                        <td>{{ player.cost|format_number({grouping_used:true}, locale='en') }}</td>
+                        <td>{{ player.MA }}</td>
+                        <td>{{ player.ST }}</td>
+                        <td>{{ player.AG }}</td>
+                        <td>{{ player.PA }}</td>
+                        <td>{{ player.AV }}</td>
+                        <td class="nowrap">
+                            {% if player.skills|length %}
+                                <ul>
+                                    {% for label, skill in player.skills %}
+                                        <li>
+                                            <a href="#{{ skill.slug }}"
+                                               data-controller="fragment-dialog-trigger"
+                                               data-action="fragment-dialog-trigger#show">{{ label }}</a>
+                                            {% if skill.compulsory %}
+                                                <span>*</span>
+                                            {% endif %}
+                                            <small>({{ skill.category.value }})</small>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            {% endif %}
+                        </td>
+                        <td class="nowrap">
+                            {% if player.traits|length %}
+                                <ul>
+                                    {% for label, trait in player.traits %}
+                                        <li>
+                                            <a href="#{{ trait.slug }}"
+                                               data-controller="fragment-dialog-trigger"
+                                               data-action="fragment-dialog-trigger#show">{{ label }}</a>
+                                            {% if trait.compulsory %}
+                                                <span>*</span>
+                                            {% endif %}
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            {% endif %}
+                        </td>
+                        <td>{{ player.primarySkillCategories|map(p => p.value)|join() }}</td>
+                        <td>{{ player.secondarySkillCategories|map(p => p.value)|join() }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <details>
+            <summary>
+                <h4 style="margin: 0; display: inline">Star Players</h4>
+            </summary>
+            {% if team.specialRulesType == 'one_of' %}
+                <form style="margin-block: 1.5em;">
+                    <label for="{{ team.slug }}[allegiance]">Team Special Rule</label>
+                    <select id="{{ team.slug }}[allegiance]"
+                            data-action="team-table#changeAllegiance"
+                            data-team-table-target="allegiance"
+                    >
+                        <option value=""></option>
+                        {% for rule in team.specialRules %}
+                            <option>{{ rule.name }}</option>
+                        {% endfor %}
+                    </select>
+                    <small style="margin-inline-start: 12px">Updates Star Players below</small>
+                </form>
+            {% endif %}
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Cost</th>
+                        <th scope="col">MA</th>
+                        <th scope="col">ST</th>
+                        <th scope="col">AG</th>
+                        <th scope="col">PA</th>
+                        <th scope="col">AV</th>
+                        <th scope="col">Skills</th>
+                        <th scope="col">Traits</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for player in team.starPlayerPositions %}
+                        <tr class="star-player hidden"
+                            id="{{ team.slug }}-{{ player.slug }}"
+                            data-team-table-target="starPlayer"
+                            data-plays-for="{{ player.playsFor|keys|json_encode }}"
+                        >
+                            <th scope="row"><a href="#{{ player.slug }}"
+                                               data-controller="fragment-dialog-trigger"
+                                               data-action="fragment-dialog-trigger#show">{{ player.name }}</a>
+                            </th>
+                            <td>{{ player.cost|format_number({grouping_used:true}, locale='en') }}</td>
+                            <td>{{ player.MA }}</td>
+                            <td>{{ player.ST }}</td>
+                            <td>{{ player.AG }}</td>
+                            <td>{{ player.PA }}</td>
+                            <td>{{ player.AV }}</td>
+                            <td class="nowrap">
+                                {% if player.skills|length %}
+                                    <ul>
+                                        {% for label, skill in player.skills %}
+                                            <li>
+                                                <a href="#{{ skill.slug }}"
+                                                   data-controller="fragment-dialog-trigger"
+                                                   data-action="fragment-dialog-trigger#show">{{ label }}</a>
+                                                {% if skill.compulsory %}
+                                                    <span>*</span>
+                                                {% endif %}
+                                                <small>({{ skill.category.value }})</small>
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                {% endif %}
+                            </td>
+                            <td class="nowrap">
+                                {% if player.traits|length %}
+                                    <ul>
+                                        {% for label, trait in player.traits %}
+                                            <li>
+                                                <a href="#{{ trait.slug }}"
+                                                   data-controller="fragment-dialog-trigger"
+                                                   data-action="fragment-dialog-trigger#show">{{ label }}</a>
+                                                {% if trait.compulsory %}
+                                                    <span>*</span>
+                                                {% endif %}
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                {% endif %}
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </details>
+    </div>
+    {% set designersCommentary = data.designersCommentary|filter(c => c.team == team.name) %}
+    {{ include('_partials/designers-commentary.html.twig', {designersCommentary}) }}
+</details>

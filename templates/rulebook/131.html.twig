@@ -1,0 +1,9 @@
+{% for starPlayer in [
+    'Grim Ironjaw',
+    'Hakflem Skuttlespike',
+    'Helmut Wulf',
+    'Karla Von Kill',
+    'Lord Borak the Despoiler',
+] %}
+    {{ include('_partials/star-player.html.twig', {player: data.starPlayerPositions[starPlayer]}) }}
+{% endfor %}

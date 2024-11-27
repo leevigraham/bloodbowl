@@ -1,0 +1,12 @@
+{% for skill in [
+    'Frenzy',
+    'Kick',
+    'Pro',
+    'Shadowing',
+    'Strip Ball',
+    'Sure Hands',
+    'Tackle',
+    'Wrestle',
+] %}
+    {{ include('_partials/skill-or-trait.html.twig', { skill: data.playerSkillsAndTraits[skill] }) }}
+{% endfor %}

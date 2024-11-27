@@ -1,0 +1,17 @@
+<h4>Mutations</h4>
+{% for skill in [
+    'Big Hand',
+    'Claws',
+    'Disturbing Presence',
+    'Extra Arms',
+    'Foul Appearance',
+    'Horns',
+    'Iron Hard Skin',
+    'Monstrous Mouth',
+    'Prehensile Tail',
+    'Tentacles',
+    'Two Heads',
+    'Very Long Legs',
+] %}
+    {{ include('_partials/skill-or-trait.html.twig', { skill: data.playerSkillsAndTraits[skill] }) }}
+{% endfor %}

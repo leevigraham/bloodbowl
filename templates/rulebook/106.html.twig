@@ -1,0 +1,12 @@
+<h5>Team Special Rules</h5>
+<p>Some teams may have one or more of the following special rules. These detail unique characteristics that set the team apart from others, be it the ability to reanimate the dead or the blessings of a patron Chaos deity.</p>
+<p>Some teams may have one or more of the following special rules:</p>
+
+{% for specialRule in [
+    'Bribery and Corruption',
+    'Favoured of…',
+    'Low Cost Linemen',
+    'Masters of Undeath',
+] %}
+{{ include('_partials/special-rule.html.twig', { specialRule: data.specialRules[specialRule]}) }}
+{% endfor %}

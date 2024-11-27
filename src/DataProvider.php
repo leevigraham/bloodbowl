@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\Dto\DesignersCommentary;
 use App\Dto\PlayerPosition;
 use App\Dto\PlayerSkill;
 use App\Dto\PlayerTrait;
@@ -33,6 +34,8 @@ class DataProvider
 
     /** @var StarPlayerPosition[] $starPlayerPositions */
     public array $starPlayerPositions = [];
+    /** @var DesignersCommentary[] */
+    public array $designersCommentary = [];
 
     public function __construct()
     {
@@ -145,6 +148,7 @@ class DataProvider
             );
             $this->playerTraits[$playerTrait->name] = $playerTrait;
         }
+        ksort($this->playerTraits);
 
         $parseSkillCategories = function ($categoryString) {
             $skills = [];
@@ -301,6 +305,30 @@ class DataProvider
                 $team->starPlayerPositions[] = $starPlayer;
             }
         }
+
+
+        $designersCommentaryRecords = Reader::createFromPath("$srcDir/designers-commentary.csv")
+            ->setHeaderOffset(0)
+            ->getRecords()
+        ;
+
+        $designersCommentaryRecords = iterator_to_array($designersCommentaryRecords);
+        foreach ($designersCommentaryRecords as $record) {
+            foreach(explode(" & ", $record['Page Ref']) as $pageRef) {
+                $designersCommentary = new DesignersCommentary(
+                    $record['Source'],
+                    $record['Document Ref'],
+                    (int)$pageRef,
+                    $record['Question'],
+                    $record['Answer'],
+                    $record['Team'],
+                    $record['Star Player'],
+                );
+                $this->designersCommentary[] = $designersCommentary;
+            }
+
+        }
+
     }
 
     public function playerSkillsGroupedByCategory(): array

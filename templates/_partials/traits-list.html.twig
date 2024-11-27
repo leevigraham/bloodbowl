@@ -1,0 +1,11 @@
+<ol class="list--tight">
+    {% for trait in data.playerTraits %}
+        <li>
+            <a href="#{{ trait.slug }}">{{ trait.name }}</a>
+            {% if trait.compulsory %}
+                <span>*</span>
+                <small class="badge badge--compulsory">Compulsory</small>
+            {% endif %}
+        </li>
+    {% endfor %}
+</ol>

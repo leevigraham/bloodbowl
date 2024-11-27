@@ -1,0 +1,9 @@
+<h4>General Skills</h4>
+{% for skill in [
+    'Block',
+    'Dauntless',
+    'Dirty Player (+X)',
+    'Fend',
+] %}
+    {{ include('_partials/skill-or-trait.html.twig', { skill: data.playerSkillsAndTraits[skill] }) }}
+{% endfor %}

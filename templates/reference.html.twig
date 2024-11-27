@@ -1,0 +1,84 @@
+{% set title = "Blood Bowl 2020 - Quick Reference" %}
+{% extends 'base.html.twig' %}
+{% block body %}
+<header>
+    <h1 style="margin-block: 0">{{ title }}</h1>
+</header>
+<nav>
+    <ol>
+        <li><a href="#teams">Teams</a></li>
+        <li><a href="#star-players">Star Players</a></li>
+        <li><a href="#player-skills-and-traits">Skills and Traits</a></li>
+        <li><a href="#special-rules">Special Rules</a></li>
+        <li style="margin-inline-start: auto"><a href="#">Top</a></li>
+    </ol>
+</nav>
+<main>
+<div id="teams" class="page">
+    <h2 style="margin-block-start: 0;">Teams</h2>
+    <ol class="list--tight">
+        {% for team in data.teams %}
+            <li><a href="#{{ team.slug }}">{{ team.name }}</a></li>
+        {% endfor %}
+    </ol>
+    {% for team in data.teams %}
+        {{ include('_partials/team.html.twig', {team}) }}
+    {% endfor %}
+</div>
+
+<div id="star-players" class="page">
+    <h2 style="margin-block-start: 0;">Star Players</h2>
+    <ol class="list--tight">
+        {% for player in data.starPlayerPositions %}
+            <li><a href="#{{ player.slug }}">{{ player.name }}</a></li>
+        {% endfor %}
+    </ol>
+    {% for player in data.starPlayerPositions %}
+        {{ include('_partials/star-player.html.twig', {player}) }}
+    {% endfor %}
+</div>
+
+<div id="player-skills-and-traits" class="page">
+    <h2 style="margin-block-start: 0;">Skills &amp; Traits</h2>
+    <p>Players that are Standing and have not lost their Tackle Zone can use their Skills or Traits at any time, not
+        just during their own activation. Players that are Prone or Stunned, or that have lost their Tackle Zone for
+        any reason, cannot use any Skills or Traits unless otherwise stated in the Skill or Trait description:</p>
+    <ul>
+        <li>You can choose to use a Skill or Trait that modifies a dice roll after the dice roll has been made.</li>
+        <li>All bonuses and/or modifiers from Skills or Traits can be combined.</li>
+        <li>Unless the description states otherwise, a Skill or Trait can be used by more than one player per team
+            turn.
+        </li>
+        <li>Unless the description states otherwise, a Skill or Trait can be used multiple times during each team
+            turn.
+        </li>
+        <li>Unless a Skill or Trait is marked with an asterisk (*), its use is not compulsory (i.e., you do not have
+            to use that Skill or Trait if you do not wish to). However, the use of a Skill or Trait marked with an
+            asterisk (*) is compulsory.
+        </li>
+    </ul>
+    <h3>Skills</h3>
+    {{ include('_partials/skills-table.html.twig') }}
+    <h3>Traits</h3>
+    {{ include('_partials/traits-list.html.twig') }}
+    {% for skill in data.playerSkillsAndTraits %}
+        {{ include('_partials/skill-or-trait.html.twig', {skill}) }}
+    {% endfor %}
+</div>
+
+<div id="special-rules" class="page">
+    <h2 style="margin-block-start: 0;">Special Rules</h2>
+    <ol class="list--tight">
+        {% for specialRule in data.specialRules %}
+            <li>
+                <a href="#{{ specialRule.slug }}">{{ specialRule.name }}</a>
+                <small>({{ specialRule.category.label }})</small>
+            </li>
+        {% endfor %}
+    </ol>
+    {% for specialRule in data.specialRules %}
+        {{ include('_partials/special-rule.html.twig', {specialRule}) }}
+    {% endfor %}
+</div>
+</main>
+{% endblock %}

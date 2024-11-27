@@ -1,0 +1,17 @@
+<h4>Strength Skills</h4>
+{% for skill in [
+    'Arm Bar',
+    'Brawler',
+    'Break Tackle',
+    'Grab',
+    'Guard',
+    'Juggernaut',
+    'Mighty Blow (+X)',
+    'Multiple Block',
+    'Pile Driver',
+    'Stand Firm',
+    'Strong Arm',
+    'Thick Skull',
+] %}
+    {{ include('_partials/skill-or-trait.html.twig', { skill: data.playerSkillsAndTraits[skill] }) }}
+{% endfor %}

@@ -1,8 +1,8 @@
 Name,Rule Book Description,Compulsory,Notes
-Always Hungry,"If this player wishes to perform a Throw Team-mate action, roll a D6 after they have finished moving, but before they throw their team-mate. On a roll of 2+, continue with the throw as normal. On a roll of 1, this player will attempt to eat their team-mate. Roll another D6:
+Always Hungry,"If this player wishes to perform a Throw Team-Mate action, roll a D6 after they have finished moving, but before they throw their team-mate. On a roll of 2+, continue with the throw as normal. On a roll of 1, this player will attempt to eat their team-mate. Roll another D6:
 
 * On a roll of 1, the team-mate has been eaten and is immediately removed from the Team Draft list. No apothecary can save them and no Regeneration attempts can be made. If the team-mate was in possession of the ball, it will bounce from the square this player occupies.
-* On a roll of 2+, the team-mate squirms free and the Throw Team-mate action is automatically fumbled, as described on page 53.",TRUE,
+* On a roll of 2+, the team-mate squirms free and the Throw Team-Mate action is automatically fumbled, as described on page 53.",TRUE,
 Animal Savagery,"When this player is activated, even if they are Prone or have lost their Tackle Zone, immediately after declaring the action they will perform but before performing the action, roll a D6, applying a +2 modifier to the dice roll if you declared the player would perform a Block or Blitz action (or a Special action granted by a Skill or Trait that can be performed instead of a Block action):
 
 * On a roll of 1-3, this player lashes out at their team-mates:
@@ -46,7 +46,7 @@ If this player ever Falls Over, is Knocked Down or is Placed Prone, an Injury ro
 
 A player with this Trait cannot also have the Diving Tackle, Frenzy, Grab, Leap, Multiple Block, On the Ball or Shadowing skills.
 ",TRUE,
-Bombardier,"When activated and if they are Standing, this player can perform a ‘Throw Bomb’ Special action. This Special action is neither a Pass action nor a Throw Team-mate action, so does not prevent another player performing one of those actions during the same team turn. However, only a single player with this Trait may perform this Special action each team turn.
+Bombardier,"When activated and if they are Standing, this player can perform a ‘Throw Bomb’ Special action. This Special action is neither a Pass action nor a Throw Team-Mate action, so does not prevent another player performing one of those actions during the same team turn. However, only a single player with this Trait may perform this Special action each team turn.
 
 A Bomb can be thrown and caught, and the throw interfered with, just like a ball, using the rules for Pass actions as described on page 48, with the following exceptions:
 
@@ -70,9 +70,10 @@ When a Bomb comes to rest on the ground, in either an unoccupied square, in a sq
 * Roll a D6 for each player (from either team) that occupies a square adjacent to the one in which the Bomb exploded:
   - On a roll of 4+, the player has been hit by the explosion.
   - On a roll of 1-3, the player manages to avoid the explosion.
-* Any Standing players hit by the explosion are Knocked Down.
+* Any Standing players hit by the explosion are <del class=""errata"">Knocked Down</del> <ins class=""errata"">Placed Prone</ins>.
 * An Armour roll (and possibly an Injury roll as well) is made against any player hit by the explosion, even if they were already Prone or Stunned.
-* You may apply a +1 modifier to either the Armour roll or Injury roll.
+* <del class=""errata"">You may apply a +1 modifier to either the Armour roll or Injury roll.</del>
+* <ins class=""errata"">If the player performing the Throw Bomb Special action is hit by their bomb and Placed Prone, either as the result of a Fumbled throw or by being hit by the explosion, then a Turnover is caused.</ins>
 
 This modifier may be applied after the roll has been made.",,
 Bone Head,"When this player is activated, even if they are Prone or have lost their Tackle Zone, immediately after declaring the action they will perform but before performing the action, roll a D6:
@@ -86,7 +87,7 @@ Chainsaw,"Instead of performing a Block action (on its own or as part of a Blitz
 To perform a Chainsaw Attack Special action, roll a D6:
 
 * On a roll of 2+, the nominated target is hit by a Chainsaw!
-* On a roll of 1, the Chainsaw will violently ‘kick-back’ and hit the player wielding it.
+* On a roll of 1, the Chainsaw will violently ‘kick-back’ and hit the player wielding it. <ins class=""errata"">This will result in a Turnover.</ins>
 * In either case, an Armour roll is made against the player hit by the Chainsaw, adding +3 to the result.
 * If the armour of the player hit is broken, they become Prone and an Injury roll is made against them. This Injury roll cannot be modified in any way.
 * If the armour of the player hit is not broken, this Trait has no effect.
@@ -106,12 +107,14 @@ To perform a Hypnotic Gaze Special action, nominate a single Standing opposition
 This player may move before performing this Special action, following all of the normal movement rules. However, once this Special action has been performed, this player may not move further and their activation comes to an This player is jealous of and dislikes certain other players on their team, as shown in brackets after the name of the Skill on this player’s profile. This may be defined by position or race. For example, a Skaven Thrower on an Underworld Denizens team has Animosity (Underworld Goblin Linemen), meaning they suffer Animosity towards any Underworld Goblin Linemen players on their team. Whereas a Skaven Renegade on a Chaos Renegade team has Animosity (all team-mates), meaning they suffer Animosity towards all of their team-mates equally.
 
 When this player wishes to perform a Hand-off action to a team-mate of the type listed, or attempts to perform a Pass action and the target square is occupied by a team-mate of the type listed, this player may refuse to do so. Roll a D6. On a roll of 1, this player refuses to perform the action and their activation comes to an end. Animosity does not extend to Mercenaries or Star Players.",,
-Kick Team-mate,"Once per team turn, in addition to another player performing either a Pass or a Throw Team-mate action, a single player with this Trait on the active team can perform a ‘Kick Team-mate’ Special action and attempt to kick a Standing team-mate with the Right Stuff trait that is in a square adjacent to them.
+Kick Team-Mate,"Once per team turn, in addition to another player performing either a Pass or a Throw Team-Mate action, a single player with this Trait on the active team can perform a ‘Kick Team-Mate’ Special action and attempt to kick a Standing team-mate with the Right Stuff trait that is in a square adjacent to them.
 
-To perform a Kick Team-mate Special action, follow the rules for Throw Team-mate actions as described on page 52.
+To perform a Kick Team-Mate Special action, follow the rules for Throw Team-Mate actions as described on page 52.
 
-However, if the Kick Team-mate Special action is fumbled, the kicked player is automatically removed from play and an Injury roll is made against them, treating a Stunned result as a KO’d result (note that, if the player that performed this action also has the Mighty Blow (+X) skill, the coach of the opposing team may use that Skill on this Injury roll). If the kicked player was in possession of the ball when removed from play, the ball will bounce from the square they occupied.",,
-Loner (X+),"If this player wishes to use a team re-roll, roll a D6. If you roll equal to or higher than the target number shown in brackets, this player may use the team re-roll as normal. Otherwise, the original result stands without being re-rolled but the team re-roll is lost just as if it had been used.",TRUE,
+However, if the Kick Team-Mate Special action is fumbled, the kicked player is automatically removed from play and an Injury roll is made against them, treating a Stunned result as a KO’d result (note that, if the player that performed this action also has the Mighty Blow (+X) skill, the coach of the opposing team may use that Skill on this Injury roll). If the kicked player was in possession of the ball when removed from play, the ball will bounce from the square they occupied.",,
+Loner (X+),"If this player wishes to use a team re-roll, roll a D6. If you roll equal to or higher than the target number shown in brackets, this player may use the team re-roll as normal. Otherwise, the original result stands without being re-rolled but the team re-roll is lost just as if it had been used.
+
+<ins class=""errata"">This Trait must still be used if the player is Prone or has lost their Tackle Zone.</ins>",TRUE,
 No Hands,"This player is unable to take possession of the ball. They may not attempt to pick it up, to catch it, or attempt to interfere with a pass. Any attempt to do so will automatically fail, causing the ball to bounce. Should this player voluntarily move into a square in which the ball is placed, they cannot attempt to pick it up. The ball will bounce and a Turnover is caused as if this player had failed an attempt to pick up the ball.",TRUE,
 Plague Ridden,"Once per game, if an opposition player with a Strength characteristic of 4 or less that does not have the Decay, Regeneration or Stunty traits suffers a Casualty result of 15-16, DEAD as the result of a Block action performed or a Foul action committed by a player with this Trait that belongs to your team, and if that player cannot be saved by an apothecary, you may choose to use this Trait. If you do, that player does not die; they have instead been infected with a virulent plague!
 
@@ -138,8 +141,12 @@ Really Stupid,"When this player is activated, even if they are Prone or have los
 * On a roll of 4+, this player continues their activation as normal and completes their declared action.
 
 Note that if you declared that this player would perform an action which can only be performed once per team turn and this player’s activation ended before the action could be completed, the action is considered to have been performed and no other player on your team may perform the same action this team turn.",TRUE,
-Regeneration,"After a Casualty roll has been made against this player, roll a D6. On a roll of 4+, the Casualty roll is discarded without effect and the player is placed in the Reserves box rather than the Casualty box of their team dugout. On a roll of 1-3, however, the result of the Casualty roll is applied as normal.",,
-Right Stuff,"If this player also has a Strength characteristic of 3 or less, they can be thrown by a team-mate with the Throw Team-mate skill, as described on page 52.",TRUE,
+Regeneration,"After a Casualty roll has been made against this player, roll a D6. On a roll of 4+, the Casualty roll is discarded without effect and the player is placed in the Reserves box rather than the Casualty box of their team dugout. On a roll of 1-3, however, the result of the Casualty roll is applied as normal.
+
+<ins class=""errata"">This Trait may still be used if the player is Prone, Stunned, or has lost their Tackle Zone.</ins>",,
+Right Stuff,"If this player also has a Strength characteristic of 3 or less, they can be thrown by a team-mate with the Throw Team-Mate skill, as described on page 52.
+
+<ins class=""errata"">This Trait may still be used if the player is Prone, Stunned, or has lost their Tackle Zone.</ins>",TRUE,
 Secret Weapon,"When a drive in which this player took part ends, even ifthis player was not on the pitch at the end of the drive, thisplayer will be Sent-off for committing a Foul, as describedon page 63.",TRUE,
 Stab,"Instead of performing a Block action (on its own or as part of a Blitz action), this player may perform a ‘Stab’ Special action. Exactly as described for a Block action, nominate a single Standing player to be the target of the Stab Special action. There is no limit to how many players with this Trait may perform this Special action each team turn.
 
@@ -152,8 +159,14 @@ Stunty,"When this player makes an Agility test in order to Dodge, they ignore an
 
 However, when an opposition player attempts to interfere with a Pass action performed by this player, that player may apply a +1 modifier to their Agility test.
 
-Finally, players with this Trait are more prone to injury. Therefore, when an Injury roll is made against this player, roll 2D6 and consult the Stunty Injury table, on page 60.",TRUE,
-Swarming,"During each Start of Drive sequence, after Step 2 but before Step 3, you may remove D3 players with this Trait from the Reserves box of your dugout and set them up on the pitch, allowing you to set up more than the usual 11 players. These extra players may not be placed on the Line of Scrimmage or in a Wide Zone.",,
+Finally, players with this Trait are more prone to injury. Therefore, when an Injury roll is made against this player, roll 2D6 and consult the Stunty Injury table, on page 60.
+
+<ins class=""errata"">This Trait must still be used if the player is Prone, Stunned, or has lost their Tackle Zone.</ins>",TRUE,
+Swarming,"During each Start of Drive sequence, after Step 2 but before Step 3, you may remove D3 players with this Trait from the Reserves box of your dugout and set them up on the pitch, allowing you to set up more than the usual 11 players. These extra players may not be placed on the Line of Scrimmage or in a Wide Zone.
+
+<ins class=""errata"">Swarming players must be set up in their team’s half.</ins>
+
+<ins class=""errata"">When using Swarming, a coach may not set up more players with the Swarming trait onto the pitch than the number of friendly players with the Swarming trait that were already set up. So, if a team had 2 players with the Swarming trait already set up on the pitch, and then rolled for 3 more players to enter the pitch via Swarming, only a maximum of 2 more Swarming players could be set up on the pitch.</ins>",,
 Swoop,"If this player is thrown by a team-mate, as described on page 52, they do not scatter before landing as they normally would. Instead, you may place the Throw-in template over the player, facing towards either End Zone or either sideline as you wish. The player then moves from the target square D3 squares in a direction determined by rolling a D6 and referring to the Throw-in template.",,
 Take Root,"When this player is activated, even if they are Prone or have lost their Tackle Zone, immediately after declaring the action they will perform but before performing the action, roll a D6:
 
@@ -163,8 +176,10 @@ Take Root,"When this player is activated, even if they are Prone or have lost th
 * On a roll of 2+, this player continues their activation as normal.
 
 If you declared that this player would perform any action that includes movement (Pass, Hand-off, Blitz or Foul) prior to them becoming Rooted, they may complete the action if possible. If they cannot, the action is considered to have been performed and no other player on your team may perform the same action this team turn.",TRUE,
-Throw Team-mate,"If this player also has a Strength characteristic of 5 or more, they may perform a Throw Team-mate action, as described on page 52, allowing them to throw a team-mate with the Right Stuff trait.",,
-Timmm-ber!,"If this player has a Movement Allowance of 2 or less, apply a +1 modifier to the dice roll when they attempt to stand up (as described on page 44) for each Open, Standing team-mate they are currently adjacent to. A natural 1 is always a failure, no matter how many team- mates are helping.",,
+Throw Team-Mate,"If this player also has a Strength characteristic of 5 or more, they may perform a Throw Team-Mate action, as described on page 52, allowing them to throw a team-mate with the Right Stuff trait.",,
+Timmm-ber!,"If this player has a Movement Allowance of 2 or less, apply a +1 modifier to the dice roll when they attempt to stand up (as described on page 44) for each Open, Standing team-mate they are currently adjacent to. A natural 1 is always a failure, no matter how many team- mates are helping.
+
+<ins class=""errata"">This Trait may still be used if the player is Prone or has lost their Tackle Zone.</ins>",,
 Titchy,"This player may apply a +1 modifier to any Agility tests they make in order to Dodge. However, if an opposition player dodges into a square within the Tackle Zone of this player, this player does not count as Marking the moving player for the purposes of calculating Agility test modifiers.",,
 Unchannelled Fury,"When this player is activated, even if they are Prone or have lost their Tackle Zone, immediately after declaring the action they will perform but before performing the action, roll a D6, applying a +2 modifier to the dice roll if you declared the player would perform a Block or Blitz action (or a Special action granted by a Skill or Trait that can be performed instead of a Block action):
 
@@ -174,7 +189,9 @@ Unchannelled Fury,"When this player is activated, even if they are Prone or have
 If you declared that this player would perform an action which can only be performed once per team turn and this player’s activation ended before the action could be completed, the action is considered to have been performed and no other player on your team may perform the same action this team turn.",TRUE,
 Breathe Fire,"Once per activation, instead of performing a Block action (either on its own or as part of a Blitz action), this player may perform a Breathe Fire Special action. When a player makes a Breathe Fire Special action they may choose one Standing opposition player they are Marking and roll a D6, applying a -1. modifier if the target has a ST of 5 or higher. On a 1, the player gets overeager, engulfing themself in flame and is immediately Knocked Down. On a 2-3, the opposition player ducks the gout of flame and nothing happens. On a 4+, the opposition player takes a ball of fire straight to the face and is immediately Placed Prone. However, if the roll is a natural 6, the potent pyro has taken its toll and the opposition player is Knocked Down instead. After the Breathe Fire Special action has been resolved, this player's activation immediately ends.",,Spike 18
 Hit and Run,"After a player with this Trait performs a Block action, they may immediately move one free square ignoring Tackle Zones so long as they are still Standing. They must ensure that after this free move, they are not Marked by or Marking any opposition players.",,Spike 16
-Bloodlust (X+),"To keep control of their wits, Vampires need a supply of fresh blood. Whenever a player with this Trait activates, after declaring their action, they must roll a D6, adding I to the roll if they declared a Block action or a Blitz action. If they roll equal to or higher than the number shown in brackets, they may activate as normal.
+Bloodlust (X+),"To keep control of their wits, Vampires need a supply of fresh blood.
+
+Whenever a player with this Trait activates, <ins class=""errata"">even if they are Prone or have lost their Tackle Zone,</ins> after declaring their action, they must roll a D6, adding 1 to the roll if they declared a Block action or a Blitz action. If they roll equal to or higher than the number shown in brackets, they may activate as normal.
 
 If the player rolls lower than the number shown in brackets, or rolls a natural 1, they may continue their activation as normal though they may change their declared action to a Move action if they wish. If the player declared an action that can only be performed once per team turn (such as a Blitz action) this will still count as the one of that action for the team turn. At the end of their activation they may bite an adjacent Thrall Lineman teammate (Standing, Prone or Stunned). If they bite a Thrall, immediately make an Injury roll for the Thrall treating any Casualty result as Badly Hurt; this will not cause a Turnover unless the Thrall was holding the ball. If they do not bite a Thrall for any reason then a Turnover is caused, the player will lose their Tackle Zone until they are next activated, and will immediately drop the ball if they were holding it. If the player was in the opposing End Zone, no touchdown is scored. If a player who failed this roll wants to make a Pass action, Hand-off, or score then they must bite a Thrall before they perform the action or score.",TRUE,Spike 16
 Drunkard,This player suffers a -1 penality to the dice roll when attempting to Rush.,,Spike 14

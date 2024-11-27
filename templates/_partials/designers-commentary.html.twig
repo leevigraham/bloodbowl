@@ -1,0 +1,19 @@
+{% if designersCommentary|length %}
+    <details class="designers-commentary">
+        <summary>
+            <h4 class="heading-5">Designer's Commentary</h4>
+        </summary>
+        <ul>
+        {% for d in designersCommentary %}
+            <li class="designers-commentary-qa">
+                <div class="designers-commentary-qa-question">{{ d.question|markdown_to_html }}</div>
+                <div class="designers-commentary-qa-answer">{{ d.answer|markdown_to_html }}</div>
+                <dl>
+                    <dt>Source Document:</dt><dd>{{ d.source }}</dd>
+                    <dt>Related Document:</dt><dd>{{ d.documentRef }} (Page {{ d.pageRef }})</dd>
+                </dl>
+            </li>
+        {% endfor %}
+        </ul>
+    </details>
+{% endif %}

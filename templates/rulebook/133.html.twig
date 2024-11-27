@@ -1,0 +1,10 @@
+{% for starPlayer in [
+    'Lucien Swift',
+    'Valen Swift',
+    'Varag Ghoul-Chewer',
+    'Grombrindal, the White Dwarf',
+    'Willow Rosebark',
+    'Zolcath the Zoat',
+] %}
+    {{ include('_partials/star-player.html.twig', {player: data.starPlayerPositions[starPlayer]}) }}
+{% endfor %}

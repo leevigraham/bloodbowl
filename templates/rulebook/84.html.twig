@@ -1,0 +1,7 @@
+{% for skill in [
+    'Bone Head',
+    'Chainsaw',
+    'Decay',
+] %}
+    {{ include('_partials/skill-or-trait.html.twig', { skill: data.playerSkillsAndTraits[skill] }) }}
+{% endfor %}
