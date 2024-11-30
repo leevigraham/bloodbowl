@@ -1,29 +1,7 @@
-<h5>
-    <strong>0-1 Halfling Master Chef</strong> – 300,000 gold pieces (100,000 gold pieces for
-    <del class="errata">teams with the 'Halfling Thimble Cup' special rule</del>
-    <ins class="errata">Halfling Teams</ins>
-    )
-</h5>
-<p>The entourage of many teams can include several world-class chefs who busy themselves with preparing the halftime and fulltime banquets for the players. The delicious aromas emanating from the team's dugout all too often distract the opposition as much as they invigorate your players! At the start of both the first and second half, after step 2 but before step 3 of the Start of Drive sequence, roll three D6. For each roll of a 4+, your team is so inspired they gain an extra team re-roll for this half. In addition, the opposing team is so distracted that for each roll of a 4+, they will lose one of their team re-rolls for this half.</p>
-<h5>
-    <strong>Unlimited Mercenary Players</strong> – price varies
-</h5>
-<p>For every player safely employed by a team, there are dozens more who will wear anyone's colours in exchange for hard currency. You may Induce Mercenary players to your team for a single game, chosen from your Team Roster, at 30,000 gold pieces more than the player would normally cost. For example, a Mercenary Human Lineman would cost 80,000 gold pieces to hire for a game rather than the usual 50,000 gold pieces.</p>
-<p>The normal limits on the total number of players allowed on a team and in each position apply to Mercenaries. However, players that are missing the game due to injury do not count towards the number of players on the team, so they are not counted when working out how many Mercenaries a team can have.</p>
-<p>All Mercenaries have the Loner (4+) trait as they are not accustomed to playing with the rest of the team. In addition, a Mercenary may be given one additional Primary skill selected from those available to a player of that position, at an additional cost of 50,000 gold pieces. For example, a Mercenary Human Lineman could be given Tackle for a total cost of 130,000 gold pieces to hire for a game. Mercenaries do not earn Star Player points and cannot be awarded the MVP for the game. Unlike Journeymen, Mercenaries cannot be permanently hired during the post-game sequence.</p>
-<h5>
-    <strong>0-2 Star Players</strong> – price varies
-</h5>
-<p>These are the heroes of the Blood Bowl arena, the most resourceful and talented players in the sport. Star Players act as free agents, playing occasional games for any team that can afford their high fees (and that they are willing to assist in the first place), and then moving on to play for another team. A team may Induce up to two Star Players that are allowed to play for the team. Unless the league commissioner decides otherwise, any Casualty table results applied against a Star Player are waived after the game – they can afford all the resurrection spells they need!</p>
-<p>
-    Star Players may not take the number of players in the team to more than 16. However, players that are missing the game due to injury do not count towards the number of players on the team, so they are not counted when working out how many Star Players a team can have.
-    <ins class="errata">
-        Star Players that must be hired as a pair (such as Dribl & Drull or the Swift Twins) only count as a single Star Player choice. However, they will still take up two spaces on a team’s Team Roster.
-    </ins>
-</p>
-<p>It is possible for both teams to hire the services of the same Star Player:</p>
-<ul>
-    <li>If this happens during a game that is part of a league, neither team can field the Star Player but the Star Player will keep both hiring fees.</li>
-    <li>If this happens during exhibition play, both teams can field the Star Player – one team has clearly hired a ringer!</li>
-</ul>
-<p>Star Players do not earn Star Player points and cannot be awarded the MVP for the game. Star Players can never gain advancements.</p>
+{% for inducement in [
+    'Halfling Master Chef',
+    'Mercenary Players',
+    'Star Players',
+] %}
+    {{ include('_partials/inducement.html.twig', {inducement: data.inducements[inducement]}) }}
+{% endfor %}

@@ -1,25 +1,10 @@
-<h5>
-    <strong>0-8 Extra Team Training</strong> – 100,000 gold pieces each
-</h5>
-<p>Getting all of the players together in the same place is hard enough on game day, let alone for a regular training session. If a coach wants to hold extra training sessions ahead of an important fixture, they had better be prepared to flash some cash to Induce the cooperation of their players! Each Extra Team Training session grants the team an extra team re-roll for each half of this game.</p>
-<h5>
-    <strong>0-3 Bribes</strong> – 100,000 gold pieces each (50,000 gold pieces for teams with the 'Bribery and Corruption' special rule)
-</h5>
-<p>When a player is caught misbehaving, a bag of gold pieces can have a surprisingly calming effect upon an angered referee! A single Bribe may be used when a player is Sent-off for committing a Foul or using a Secret Weapon. To use a Bribe, roll a D6. On a roll of 2-6, the Bribe is effective and the player is not Sent-off (and no Turnover is caused), but on a roll of 1 the Bribe is wasted and the referee's decision still stands! Each Bribe may be used once per game.</p>
-<p>A single Bribe may be used after an attempt to Argue the Call has been made. However, if a 1 was rolled when attempting to Argue the Call and the head coach ejected, as described on <a href="#p63">page 63</a>, the ref is annoyed beyond the calming effects of mere gold and no Bribe may be used this time!</p>
-<h5>
-    <strong>0-2 Wandering Apothecaries</strong> – 100,000 gold pieces each (not available to teams that cannot hire an apothecary)
-</h5>
-<p>Any team that can normally hire an apothecary may Induce a Wandering Apothecary or two to help during the game. Often these apothecaries are local barber surgeons, present for the game and willing to recoup the price of their ticket by helping out. Others are experts of questionable veracity, hoping to prove the worth of their unorthodox methods. Wandering Apothecaries follow all the rules for normal apothecaries, as described on <a href="#p62">page 62</a>. However, unlike a normal apothecary, a Wandering Apothecary may attempt to patch-up any Journeymen or Mercenary players the team includes, but cannot attempt to patch up a Star Player.</p>
-<h5>
-    <strong>0-1 Mortuary Assistant</strong> – 100,000 gold pieces (only available to teams with the 'Sylvanian Spotlight' special rule)
-</h5>
-<p>Necromancers are always looking for a helping hand with their work, and the local mortuary workers are often eager to earn some extra income. A Mortuary Assistant is a master of needle, thread and twisted wire, connecting hip bone to leg bone, repairing funeral bindings, and so on. They can really get the players shambling back to the pitch! A Mortuary Assistant may be used once per game to re-roll one failed Regeneration roll for any player currently on the team, including Journeymen, but not including Mercenaries or Star Players.</p>
-<h5>
-    <strong>0-1 Plague Doctor</strong> – 100,000 gold pieces (only available to teams with the 'Favoured of Nurgle' special rule)
-</h5>
-<p>The Plague Doctors that accompany Nurgle-aligned teams are well-versed in the care of the many virulent plagues and ailments that infect their charges. Once per game, a Plague Doctor may be used to re-roll one failed Regeneration roll for a player on their team. Alternatively, once per game the Plague Doctor may be used in exactly the same way as an apothecary when any player on their team is Knocked-out (see <a href="#p62">page 62</a>). Plague Doctors benefit all players currently on the team, including Journeymen, but not including Mercenaries or Star Players.</p>
-<h5>
-    <strong>0-1 Riotous Rookies</strong> – 100,000 gold pieces (only available to teams with the 'Low Cost Linemen' special rule)
-</h5>
-<p>Ahead of the game the head coach ventures outside the stadium armed with handfuls of small change and dried beans which they fling to the adoring crowd, telling them they have been hired and this game is their big break in Blood Bowl. Regardless of how many players are available for this game and in addition to any Journeymen the team gains for free to make up for any lack of players, your team gains an additional 2D3+1 Journeymen for this game. These fresh-faced young hopefuls may take the number of players on your Team Draft list temporarily above 16. They are normal Journeyman players in every other respect and unless hired in the post-game sequence, they will be sent on their merry way once the game has ended.</p>
+{% for inducement in [
+    'Extra Team Training',
+    'Bribes',
+    'Wandering Apothecaries',
+    'Mortuary Assistant',
+    'Plague Doctor',
+    'Riotous Rookies',
+] %}
+    {{ include('_partials/inducement.html.twig', {inducement: data.inducements[inducement]}) }}
+{% endfor %}

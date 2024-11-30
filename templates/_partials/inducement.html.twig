@@ -1,0 +1,11 @@
+<details id="{{ inducement.slug }}" class="inducement">
+    <summary>
+        <h3 class="heading-5">
+            {{ inducement.qty }} {{ inducement.name|raw }}
+            <small>({{ inducement.cost|raw }})</small>
+        </h3>
+    </summary>
+    <div>
+        {{ inducement.descriptionHtml|raw }}
+    </div>
+</details>

@@ -1,0 +1,199 @@
+Qty,Name,Cost,Rule Book Description - HTML
+0-4,Temp Agency Cheerleaders,"20,000 gold pieces each","<p>Cheerleading isn't steady work and there are always young hopefuls looking for their big break, willing to bolster a depleted cheer squad on game day! In addition to hiring cheerleaders as permanent Sideline Staff, any team may temporarily purchase some Temp Agency Cheerleaders as Inducements. Simply increase the team's number of cheerleaders by the number Induced, up to a maximum of 16 in total, for the duration of the game.</p>
+<p>At the end of the game, any Temp Agency Cheerleaders will leave the team.</p>"
+0-3,Part-time Assistant Coaches,"20,000 gold pieces each","<p>Everyone's an expert, and if a coach is willing to pay, many will share that expertise with the team! In addition to hiring assistant coaches as permanent Sideline Staff, any team may temporarily purchase some Part-time Assistant Coaches as Inducements. Simply increase the team's number of assistant coaches by the number Induced, up to a maximum of nine in total, for the duration of the game.</p>
+<p>At the end of the game, any Part-time Assistant Coaches will leave the team.</p>"
+0-1,Weather Mage,"30,000 gold pieces","<p>Many stadium owners employ Weather Mages, paying good money for highly localised spells to control the elements to keep the fans dry and happy. Rarely does this magical climate control extend to the pitch though, unless a coach is willing to pay for the service that is! A Weather Mage is not a Wizard Inducement and a coach may Induce both a Weather Mage and a Wizard of some sort.</p>
+<p>You may use a Weather Mage once per game, at the start of any one of your team turns, before activating any of your players. Roll on the Weather table, applying a modifier of +1 or +2, or -1 or -2 if desired. The resulting weather conditions are applied immediately and will last until the end of the opposition's next team turn, replacing the existing weather conditions. At the end of opposition's next team turn or the end of the drive (whichever comes first), the replaced weather conditions will return.</p>"
+0-2,Bloodweiser Kegs,"50,000 gold pieces each","<p>Nothing says “get back in the game” like a frosty Bloodweiser Ale served straight from the keg. There's probably an official rule regarding drinking during a game, but whether it's compulsory or banned, who cares! For each Bloodweiser Keg Induced, you may apply a +1 modifier to the result of any dice rolls made during this game when rolling to see if any of your players recovers from being KO'd. Bloodweiser Kegs benefit all players currently on the team, including Journeymen, Star Players and Mercenaries.</p>"
+0-5,Special Plays,"100,000 gold pieces each","<p>Each Special Plays Inducement purchased gives you one Special Plays card to use during the game ahead. Cards are drawn from one or more of the Special Plays card decks during the Inducements step of the pre-game sequence:</p>
+<ul>
+    <li>Each Special Plays Inducement purchased allows you to draw cards from a single deck.</li>
+    <li>The deck from which cards are drawn is determined by rolling a D6 and consulting the table below.</li>
+    <li>For each separate Special Plays Inducement purchased, roll again on the table below.</li>
+    <li>There is no limit to how many cards may be drawn from each deck, but if the second roll or any subsequent rolls give a duplicated result, you may re-roll the D6. If the D6 is re-rolled, you must accept the result of the re-roll.</li>
+</ul>
+<div class=""table-wrapper"">
+    <table>
+        <caption>Special Play Cards</caption>
+        <thead>
+        <tr>
+            <th scope=""col"">D6</th>
+            <th scope=""col"">DECK</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope=""row"">1</th>
+            <td>Random Events</td>
+        </tr>
+        <tr>
+            <th scope=""row"">2</th>
+            <td>Dirty Tricks</td>
+        </tr>
+        <tr>
+            <th scope=""row"">3</th>
+            <td>Magical Memorabilia</td>
+        </tr>
+        <tr>
+            <th scope=""row"">4</th>
+            <td>Heroic Feats</td>
+        </tr>
+        <tr>
+            <th scope=""row"">5</th>
+            <td>Benefits of Training</td>
+        </tr>
+        <tr>
+            <th scope=""row"">6</th>
+            <td>Miscellaneous Mayhem</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<p>
+    <strong>Card Selection:</strong> Once the D6 has been rolled, the appropriate Special Plays card deck is shuffled and two cards are drawn from the top. You may then read both cards before choosing one to keep and one to discard.
+</p>"
+0-8,Extra Team Training,"100,000 gold pieces each","<p>Getting all of the players together in the same place is hard enough on game day, let alone for a regular training session. If a coach wants to hold extra training sessions ahead of an important fixture, they had better be prepared to flash some cash to Induce the cooperation of their players! Each Extra Team Training session grants the team an extra team re-roll for each half of this game.</p>"
+0-3,Bribes,"100,000 gold pieces each (50,000 gold pieces for teams with the 'Bribery and Corruption' special rule)","<p>When a player is caught misbehaving, a bag of gold pieces can have a surprisingly calming effect upon an angered referee! A single Bribe may be used when a player is Sent-off for committing a Foul or using a Secret Weapon. To use a Bribe, roll a D6. On a roll of 2-6, the Bribe is effective and the player is not Sent-off (and no Turnover is caused), but on a roll of 1 the Bribe is wasted and the referee's decision still stands! Each Bribe may be used once per game.</p>
+<p>A single Bribe may be used after an attempt to Argue the Call has been made. However, if a 1 was rolled when attempting to Argue the Call and the head coach ejected, as described on <a href=""#p63"">page 63</a>, the ref is annoyed beyond the calming effects of mere gold and no Bribe may be used this time!</p>"
+0-2,Wandering Apothecaries,"100,000 gold pieces each (not available to teams that cannot hire an apothecary)","<p>Any team that can normally hire an apothecary may Induce a Wandering Apothecary or two to help during the game. Often these apothecaries are local barber surgeons, present for the game and willing to recoup the price of their ticket by helping out. Others are experts of questionable veracity, hoping to prove the worth of their unorthodox methods. Wandering Apothecaries follow all the rules for normal apothecaries, as described on <a href=""#p62"">page 62</a>. However, unlike a normal apothecary, a Wandering Apothecary may attempt to patch-up any Journeymen or Mercenary players the team includes, but cannot attempt to patch up a Star Player.</p>"
+0-1,Mortuary Assistant,"100,000 gold pieces (only available to teams with the 'Sylvanian Spotlight' special rule)","<p>Necromancers are always looking for a helping hand with their work, and the local mortuary workers are often eager to earn some extra income. A Mortuary Assistant is a master of needle, thread and twisted wire, connecting hip bone to leg bone, repairing funeral bindings, and so on. They can really get the players shambling back to the pitch! A Mortuary Assistant may be used once per game to re-roll one failed Regeneration roll for any player currently on the team, including Journeymen, but not including Mercenaries or Star Players.</p>"
+0-1,Plague Doctor,"100,000 gold pieces (only available to teams with the 'Favoured of Nurgle' special rule)","<p>The Plague Doctors that accompany Nurgle-aligned teams are well-versed in the care of the many virulent plagues and ailments that infect their charges. Once per game, a Plague Doctor may be used to re-roll one failed Regeneration roll for a player on their team. Alternatively, once per game the Plague Doctor may be used in exactly the same way as an apothecary when any player on their team is Knocked-out (see <a href=""#p62"">page 62</a>). Plague Doctors benefit all players currently on the team, including Journeymen, but not including Mercenaries or Star Players.</p>"
+0-1,Riotous Rookies,"100,000 gold pieces (only available to teams with the 'Low Cost Linemen' special rule)","<p>Ahead of the game the head coach ventures outside the stadium armed with handfuls of small change and dried beans which they fling to the adoring crowd, telling them they have been hired and this game is their big break in Blood Bowl. Regardless of how many players are available for this game and in addition to any Journeymen the team gains for free to make up for any lack of players, your team gains an additional 2D3+1 Journeymen for this game. These fresh-faced young hopefuls may take the number of players on your Team Draft list temporarily above 16. They are normal Journeyman players in every other respect and unless hired in the post-game sequence, they will be sent on their merry way once the game has ended.</p>"
+0-1,Halfling Master Chef,"300,000 gold pieces
+        (100,000 gold pieces for
+        <del class=""errata"">teams with the 'Halfling Thimble Cup' special rule</del>
+        <ins class=""errata"">Halfling Teams</ins>)","<p>The entourage of many teams can include several world-class chefs who busy themselves with preparing the halftime and fulltime banquets for the players. The delicious aromas emanating from the team's dugout all too often distract the opposition as much as they invigorate your players! At the start of both the first and second half, after step 2 but before step 3 of the Start of Drive sequence, roll three D6. For each roll of a 4+, your team is so inspired they gain an extra team re-roll for this half. In addition, the opposing team is so distracted that for each roll of a 4+, they will lose one of their team re-rolls for this half.</p>"
+Unlimited,Mercenary Players,"price varies","<p>For every player safely employed by a team, there are dozens more who will wear anyone's colours in exchange for hard currency. You may Induce Mercenary players to your team for a single game, chosen from your Team Roster, at 30,000 gold pieces more than the player would normally cost. For example, a Mercenary Human Lineman would cost 80,000 gold pieces to hire for a game rather than the usual 50,000 gold pieces.</p>
+<p>The normal limits on the total number of players allowed on a team and in each position apply to Mercenaries. However, players that are missing the game due to injury do not count towards the number of players on the team, so they are not counted when working out how many Mercenaries a team can have.</p>
+<p>All Mercenaries have the Loner (4+) trait as they are not accustomed to playing with the rest of the team. In addition, a Mercenary may be given one additional Primary skill selected from those available to a player of that position, at an additional cost of 50,000 gold pieces. For example, a Mercenary Human Lineman could be given Tackle for a total cost of 130,000 gold pieces to hire for a game. Mercenaries do not earn Star Player points and cannot be awarded the MVP for the game. Unlike Journeymen, Mercenaries cannot be permanently hired during the post-game sequence.</p>"
+0-2,Star Players,"price varies","<p>These are the heroes of the Blood Bowl arena, the most resourceful and talented players in the sport. Star Players act as free agents, playing occasional games for any team that can afford their high fees (and that they are willing to assist in the first place), and then moving on to play for another team. A team may Induce up to two Star Players that are allowed to play for the team. Unless the league commissioner decides otherwise, any Casualty table results applied against a Star Player are waived after the game – they can afford all the resurrection spells they need!</p>
+<p>
+    Star Players may not take the number of players in the team to more than 16. However, players that are missing the game due to injury do not count towards the number of players on the team, so they are not counted when working out how many Star Players a team can have.
+    <ins class=""errata"">
+        Star Players that must be hired as a pair (such as Dribl & Drull or the Swift Twins) only count as a single Star Player choice. However, they will still take up two spaces on a team’s Team Roster.
+    </ins>
+</p>
+<p>It is possible for both teams to hire the services of the same Star Player:</p>
+<ul>
+    <li>If this happens during a game that is part of a league, neither team can field the Star Player but the Star Player will keep both hiring fees.</li>
+    <li>If this happens during exhibition play, both teams can field the Star Player – one team has clearly hired a ringer!</li>
+</ul>
+<p>Star Players do not earn Star Player points and cannot be awarded the MVP for the game. Star Players can never gain advancements.</p>"
+0-2,(In)Famous Coaching Staff,"price varies","p>Although most Blood Bowl celebrities are players, with the occasional ref thrown in for good measure, there are several well-known members of coaching staff around the circuit. Many of these non-playing professionals are willing to offer out their services to other teams for the right price, bringing their expertise to the dugout.</p>
+<p>(In)Famous Coaching Staff are available to purchase during the pre-game sequence at the cost listed. You may purchase up to two (In)Famous Coaching Staff who are allowed to assist your team. As with Star Players, it is possible for both teams to hire the services of the same named (In)Famous Coaching Staff (such as Josef Bugman):</p>
+<ul>
+    <li>If this happens during a game that is part of a league, neither team can use the (In)Famous Coaching Staff but the (In)Famous Coaching Staff will keep both hiring fees.</li>
+    <li>If this happens during exhibition play, both teams can use the (In)Famous Coaching Staff – one team has clearly hired a ringer!</li>
+</ul>
+<p>There are too many (In)Famous Coaching Staff to list here, and most are only available to certain teams. Details of further (In)Famous Coaching Staff can be found in the various Blood Bowl supplements available.</p>"
+0-1,Wizard,"price varies","<p>Wizards of the various Arcane Colleges find ready employment with the many Cabalvision networks, as it takes huge amounts of magical energy to capture the action and beam it globally to the crystal balls and magic mirrors of Cabalvision subscribers around the world. Consequently, there are always Wizards to be found at any given fixture, card carrying members of the Colleges of Magic, all more than happy to moonlight for a team wishing to secure their assistance.</p>
+<p>No team may purchase more than one Wizard Inducement per game.</p>
+<p>Some Wizards are named, although most are not. As with Star Players, it is possible for both teams to hire the services of the same named Wizard:</p>
+<ul>
+    <li>If this happens during a game that is part of a league, neither team can use the named Wizard but the named Wizard will keep both hiring fees.</li>
+    <li>If this happens during exhibition play, both teams can use the named Wizard– one team has clearly hired a ringer!</li>
+</ul>
+<p>If a Wizard Inducement is not named, there is no restriction on both teams fielding the same type. There are too many types of</p>
+<p>Wizard to list here, and most are only available to certain teams. Details of further Wizards can be found in the various Blood Bowl supplements available.</p>"
+0-1,Biased Referee,"price varies","<p>Many referees become celebrities in their own right, sometimes for their even-handed application of the rules, more often for their blatant corruption or violent outbursts! Many teams will go out of their way to bribe a ref, but nothing beats turning up to a game knowing that the ref is not only on your payroll, but is practically a part of your team!</p>
+<p>Biased Referees are available to purchase during the pre-game sequence at the cost listed, and because Blood Bowl games tend to be officiated over by a group rather than a single individual, both teams may purchase a Biased Referee. You may purchase one Biased Referee to treat your team favourably during the game ahead.</p>
+<p>For the most part, a Biased Referee will treat both teams equally, meaning that they follow all of the normal referee rules as described on <a href=""#p63"">page 63</a>. Where they differ is that they will be either far more harsh in their scrutiny of the opposition or far more lenient in their treatment of the team that has paid them off. How this manifests is described in each Biased Referee's description.</p>
+<p>Many Biased Referees are named celebrities, although most are not. As with Star Players, it is possible for both teams to hire the services of the same named Biased Referee:</p>
+<ul>
+    <li>If this happens during a game that is part of a league, neither team can use the named Biased Referee but the named Biased Referee will keep both hiring fees.</li>
+    <li>If this happens during exhibition play, both teams can use the named Biased Referee – they can dish out harsh rulings to both sides! There are too many named Biased Referees to list here, and most are only available to certain teams. Details of further Biased Referees can be found in the various Blood Bowl supplements available.</li>
+</ul>"
+0-2,(In)Famous Coaching Staff Inducement: Josef Bugman,"100,000 Gold Pieces, available to any team","<p>The name Josef Bugman is synonymous with Blood Bowl. With numerous sponsorship deals across the Old World, stocks of Bugman's XXXXXX can be found in most Blood Bowl stadia; the amber liquid making sure the crowd is suitably rowdy by kick-off. When Bugman turns up to a game in-person it is a spectacle to behold! As he enters the stadium he greets the cheering crowd. In his wake Dwarf cheerleaders dance through the crowd with beer cannon, whilst the Bugman's Blimp flies overhead dropping flagons of fine ale into the upraised hands of the spectators.</p>
+<p>But Bugman is no mere spectator; the stout brewer owns and coaches numerous teams. For all his bluster, Bugman is a fair coach, having a good eye for the ebb and flow of the game – the problem arises when things don't go his team's way, or he gets excessively drunk, or some combination of the two, and he staggers out onto the field to take matters into his own hands…</p>
+<h6>Bugmans XXXXXX</h6>
+<p>Bugman provides players on his team with an ample supply of Bugman's XXXXXX. This most famous of Dwarf ales is renowned for its recuperative properties. When rolling to see if Knocked-out players recover, rolls of a 1 can be re-rolled.</p>
+<h6>Keen Player</h6>
+<p>If Bugman's team cannot set up 11 players at the start of a drive, Bugman may decide to join in himself! You can choose to set him up as part of your team. If you do so, he counts as part of the team for the duration of the drive. When the drive ends, Bugman is Sent-off for committing a Foul and has no further effect on the game – he cannot be used in a later drive. The Bugman's XXXXXX, however, is not lost; the players simply refuse to give it up! Bugman has the following profile:</p>
+<div class=""table-wrapper"">
+    <table>
+        <thead>
+        <tr>
+            <th scope=""col""></th>
+            <th scope=""col"">MA</th>
+            <th scope=""col"">ST</th>
+            <th scope=""col"">AG</th>
+            <th scope=""col"">PA</th>
+            <th scope=""col"">AV</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Bugman</td>
+            <td>5</td>
+            <td>3</td>
+            <td>3+</td>
+            <td>6+</td>
+            <td>9+</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<dl>
+    <dt>Skills &amp; Traits</dt>
+    <dd>Loner (5+), Tackle, Thick Skull, Wrestle</dd>
+</dl>"
+0-1,Wizard Inducement: Hireling Sports-Wizard,"150,000 Gold Pieces, available to any team","<p>The spells a Hireling Sports Wizard will use are carefully selected to amaze and amuse the fans in equal measure. Many spectacular fireballs explode on pitches just as often as opposition players are turned into frogs. A player turned into a frog can be turned back quite quickly with no more lasting consequences than an inexplicable desire to sit on a log and eat flies (if they're lucky enough to be changed back at all, that is!).</p>
+<p>Once per game, a Hireling Sports-Wizard may cast one of the following spells:</p>
+<h6>Fireball</h6>
+<del class=""block errata"">
+    <p>You may cast this spell either at the start of any of the opposition's team turns, before any player is activated, or immediately after any of the opposition's team turns has ended. Choose a target square anywhere on the pitch and roll a D6 for each Standing player (from either team) that occupies either the target square or a square adjacent to it:</p>
+</del>
+<ins class=""block errata"">
+    <p>You may cast this spell at the end of either player’s team turn, before the next team turn begins.</p>
+</ins>
+<ul>
+    <li>On a roll of 4+, the player has been hit by the Fireball.</li>
+    <li>On a roll of 1-3, the player manages to avoid the Fireball.</li>
+</ul>
+<p>Any Standing players hit by the Fireball are Knocked Down. When a player is Knocked Down by a Fireball, you may apply a +1 modifier to either the Armour roll or Injury roll. This modifier may be applied after the roll has been made.</p>
+<h6>Zap!</h6>
+<p>You may cast this spell either at the start of any of the opposition's team turns, before any player is activated, or immediately after any of the opposition's team turns has ended. Target any opposition player and roll a D6:</p>
+<ul>
+    <li>If the roll is equal to or higher than the player's Strength characteristic, or is a natural 6, that player turns into a frog for the remainder of the drive, after which their coach will secure emergency magical assistance to turn the player back into their original form.</li>
+    <li>If the roll is lower than the player's Strength characteristic, the player develops a fresh crop of warts, but the spell has no further effect.</li>
+</ul>
+<p>If the player was in possession of the ball when they were turned into a frog, it is dropped and will bounce. When a roll on the Casualty table is required against the frog, no roll is made. Instead, it is automatically treated as if a Badly Hurt result had been rolled. The frog must miss the rest of the game and cannot be patched-up by an apothecary (because it's a frog!). At the end of the game, the player is returned to normal shape with no ill effects.</p>
+<p>The frog has the following profile:</p>
+<div class=""table-wrapper"">
+    <table>
+        <thead>
+        <tr>
+            <th scope=""col""></th>
+            <th scope=""col"">MA</th>
+            <th scope=""col"">ST</th>
+            <th scope=""col"">AG</th>
+            <th scope=""col"">PA</th>
+            <th scope=""col"">AV</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Frog</td>
+            <td>5</td>
+            <td>1</td>
+            <td>2+</td>
+            <td>-</td>
+            <td>5+</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<dl>
+    <dt>Skills &amp; Traits</dt>
+    <dd>Dodge, Leap, No Hands, Stunty, Titchy, Very Long Legs</dd>
+</dl>"
+0-1,Biased Referee Inducement,"120,000 Gold Pieces (80,000 Gold Pieces for teams with the 'Bribery and Corruption' Special Rule), available to any team","<p>In the years since the collapse of the NAF, there has been a marked increase of RARG members who show blatant bias. Whilst most referees are happy to accept bribes on a case by case basis, many others have started offering their services to a favoured team for an entire game!</p>
+<h6>Close Scrutiny</h6>
+<p>Strict adherence to the rules is of paramount importance to all referees. This is especially true when one of the teams has paid them to watch the opposition closely! If any player on the opposing team commits a Foul without rolling a double when making either the Armour roll or Injury roll, roll a D6:</p>
+<ul>
+    <li>On a roll of 5+, the Biased Referee spots the Foul and the player is Sent-off, exactly as if they had rolled a double (i.e., the opposing coach may use a Bribe if one is available and may attempt to Argue the Call).</li>
+    <li>On a roll of 1-4, the player manages to avoid the ref's attention.</li>
+</ul>
+<h6>""I didn't See a Thing""</h6>
+<p>Whilst watching one team incredibly closely, the Biased Referee can easily be forgiven for missing infractions perpetrated by the other. When rolling on the Argue the Call table, you may apply a +1 modifier to the dice roll.</p>"

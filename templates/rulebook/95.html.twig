@@ -1,23 +1,6 @@
-<h5>
-    <strong>0-1 Biased Referee</strong> – price varies
-</h5>
-<p>Many referees become celebrities in their own right, sometimes for their even-handed application of the rules, more often for their blatant corruption or violent outbursts! Many teams will go out of their way to bribe a ref, but nothing beats turning up to a game knowing that the ref is not only on your payroll, but is practically a part of your team!</p>
-<p>Biased Referees are available to purchase during the pre-game sequence at the cost listed, and because Blood Bowl games tend to be officiated over by a group rather than a single individual, both teams may purchase a Biased Referee. You may purchase one Biased Referee to treat your team favourably during the game ahead.</p>
-<p>For the most part, a Biased Referee will treat both teams equally, meaning that they follow all of the normal referee rules as described on <a href="#p63">page 63</a>. Where they differ is that they will be either far more harsh in their scrutiny of the opposition or far more lenient in their treatment of the team that has paid them off. How this manifests is described in each Biased Referee's description.</p>
-<p>Many Biased Referees are named celebrities, although most are not. As with Star Players, it is possible for both teams to hire the services of the same named Biased Referee:</p>
-<ul>
-    <li>If this happens during a game that is part of a league, neither team can use the named Biased Referee but the named Biased Referee will keep both hiring fees.</li>
-    <li>If this happens during exhibition play, both teams can use the named Biased Referee – they can dish out harsh rulings to both sides! There are too many named Biased Referees to list here, and most are only available to certain teams. Details of further Biased Referees can be found in the various Blood Bowl supplements available.</li>
-</ul>
-<h5>
-    <strong>0-1 Biased Referee Inducement</strong> – 120,000 Gold Pieces (80,000 Gold Pieces for teams with the 'Bribery and Corruption' Special Rule), available to any team
-</h5>
-<p>In the years since the collapse of the NAF, there has been a marked increase of RARG members who show blatant bias. Whilst most referees are happy to accept bribes on a case by case basis, many others have started offering their services to a favoured team for an entire game!</p>
-<h6>Close Scrutiny</h6>
-<p>Strict adherence to the rules is of paramount importance to all referees. This is especially true when one of the teams has paid them to watch the opposition closely! If any player on the opposing team commits a Foul without rolling a double when making either the Armour roll or Injury roll, roll a D6:</p>
-<ul>
-    <li>On a roll of 5+, the Biased Referee spots the Foul and the player is Sent-off, exactly as if they had rolled a double (i.e., the opposing coach may use a Bribe if one is available and may attempt to Argue the Call).</li>
-    <li>On a roll of 1-4, the player manages to avoid the ref's attention.</li>
-</ul>
-<h6>"I didn't See a Thing"</h6>
-<p>Whilst watching one team incredibly closely, the Biased Referee can easily be forgiven for missing infractions perpetrated by the other. When rolling on the Argue the Call table, you may apply a +1 modifier to the dice roll.</p>
+{% for inducement in [
+    'Biased Referee',
+    'Biased Referee Inducement',
+] %}
+    {{ include('_partials/inducement.html.twig', {inducement: data.inducements[inducement]}) }}
+{% endfor %}

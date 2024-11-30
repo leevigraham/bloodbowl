@@ -3,6 +3,7 @@
 namespace App;
 
 use App\Dto\DesignersCommentary;
+use App\Dto\Inducement;
 use App\Dto\PlayerPosition;
 use App\Dto\PlayerSkill;
 use App\Dto\PlayerTrait;
@@ -36,6 +37,7 @@ class DataProvider
     public array $starPlayerPositions = [];
     /** @var DesignersCommentary[] */
     public array $designersCommentary = [];
+    public array $inducements = [];
 
     public function __construct()
     {
@@ -327,6 +329,22 @@ class DataProvider
                 $this->designersCommentary[] = $designersCommentary;
             }
 
+        }
+
+        $inducementRecords = Reader::createFromPath("$srcDir/inducements.csv")
+            ->setHeaderOffset(0)
+            ->getRecords()
+        ;
+
+        $inducementRecords = iterator_to_array($inducementRecords);
+        foreach ($inducementRecords as $record) {
+            $inducement = new Inducement(
+                $record['Qty'],
+                $record['Name'],
+                $record['Cost'],
+                $record['Rule Book Description - HTML'],
+            );
+            $this->inducements[$inducement->name] = $inducement;
         }
 
     }
