@@ -544,14 +544,37 @@
             }
         }
 
+        @media print {
+            body {
+                padding: 0;
+                background: none;
+            }
+            .page {
+                padding-inline: 0;
+                margin-inline: 0;
+                box-shadow: none;
+                border-block-start: 1px solid var(--color-zinc-300);
+            }
+            details::details-content { display: contents; }
+            .table-wrapper {}
+            dl, ul, ol, p, .table-wrapper, ins.block, del.block {
+                margin-block-start: 1rem;
+                margin-block-end: 1rem;
+                max-width: none;
+            }
+        }
+
     </style>
 </head>
 <body class="">
 <div class="github-banner">
-    <p>The source for this website is available at:
+    <p>This document is intended for personal use for those who own a copy of Blood Bowl 2020 and related publications. It is intended to supplement the official rules and publications, not replace them.</p>
+    <p>It is completely unofficial and in no way endorsed by Games Workshop Limited.</p>
+    <p>
+        The source for this website is available at:
         <a href="https://github.com/leevigraham/bloodbowl">github.com/leevigraham/bloodbowl</a>.
+        Contributions / Pull Requests are welcome.
     </p>
-    <p>Contributions / Pull Requests are welcome.</p>
 </div>
 
     <header>

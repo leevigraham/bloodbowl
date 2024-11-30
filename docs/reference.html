@@ -544,14 +544,37 @@
             }
         }
 
+        @media print {
+            body {
+                padding: 0;
+                background: none;
+            }
+            .page {
+                padding-inline: 0;
+                margin-inline: 0;
+                box-shadow: none;
+                border-block-start: 1px solid var(--color-zinc-300);
+            }
+            details::details-content { display: contents; }
+            .table-wrapper {}
+            dl, ul, ol, p, .table-wrapper, ins.block, del.block {
+                margin-block-start: 1rem;
+                margin-block-end: 1rem;
+                max-width: none;
+            }
+        }
+
     </style>
 </head>
 <body class="">
 <div class="github-banner">
-    <p>The source for this website is available at:
+    <p>This document is intended for personal use for those who own a copy of Blood Bowl 2020 and related publications. It is intended to supplement the official rules and publications, not replace them.</p>
+    <p>It is completely unofficial and in no way endorsed by Games Workshop Limited.</p>
+    <p>
+        The source for this website is available at:
         <a href="https://github.com/leevigraham/bloodbowl">github.com/leevigraham/bloodbowl</a>.
+        Contributions / Pull Requests are welcome.
     </p>
-    <p>Contributions / Pull Requests are welcome.</p>
 </div>
 
 <header>
@@ -43477,6 +43500,8 @@
         <p>When this player performs a Quick Pass action or a Short Pass action, you may apply an additional +1 modifier to the Passing Ability test.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     None
@@ -43536,6 +43561,8 @@
 </ul>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -43606,6 +43633,8 @@
 <p>If you declared that this player would perform an action which can only be performed once per team turn and this player’s activation ended before the action could be completed, the action is considered to have been performed and no other player on your team may perform the same action this team turn.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -43654,6 +43683,8 @@
 <p>When this player wishes to perform a Hand-off action to a team-mate of the type listed, or attempts to perform a Pass action and the target square is occupied by a team-mate of the type listed, this player may refuse to do so. Roll a D6. On a roll of 1, this player refuses to perform the action and their activation comes to an end. Animosity does not extend to Mercenaries or Star Players.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -43763,6 +43794,8 @@
 <p>If the opposition player was being Marked by more than one player with this Skill, only one player may use it.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -43825,6 +43858,8 @@
 <p>A player with this Trait cannot also have the Diving Tackle, Frenzy, Grab, Leap, Multiple Block, On the Ball or Shadowing skills.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -43885,6 +43920,8 @@
 <p>A player with this Trait cannot also have the Diving Tackle, Frenzy, Grab, Leap, Multiple Block, On the Ball or Shadowing skills.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>AS2021</dd>
             <dt>Player positions:</dt>
             <dd>
                                     None
@@ -43920,6 +43957,8 @@
         <p>This player may ignore any modifier(s)for being Marked or for Pouring Rain weather conditions when they attempt to pick up the ball.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     None
@@ -43942,6 +43981,8 @@
         <p>When a Both Down result is applied during a Block action, this player may choose to ignore it and not be Knocked Down, as described on page 57.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -44189,6 +44230,8 @@
 <p>If the player rolls lower than the number shown in brackets, or rolls a natural 1, they may continue their activation as normal though they may change their declared action to a Move action if they wish. If the player declared an action that can only be performed once per team turn (such as a Blitz action) this will still count as the one of that action for the team turn. At the end of their activation they may bite an adjacent Thrall Lineman teammate (Standing, Prone or Stunned). If they bite a Thrall, immediately make an Injury roll for the Thrall treating any Casualty result as Badly Hurt; this will not cause a Turnover unless the Thrall was holding the ball. If they do not bite a Thrall for any reason then a Turnover is caused, the player will lose their Tackle Zone until they are next activated, and will immediately drop the ball if they were holding it. If the player was in the opposing End Zone, no touchdown is scored. If a player who failed this roll wants to make a Pass action, Hand-off, or score then they must bite a Thrall before they perform the action or score.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>Spike 16</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -44273,6 +44316,8 @@
 <p>This modifier may be applied after the roll has been made.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -44332,6 +44377,8 @@
 <p>If you declared that this player would perform an action which can only be performed once per team turn and this player’s activation ended before the action could be completed, the action is considered to have been performed and no other player on your team may perform the same action this team turn.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -44402,6 +44449,8 @@
         <p>When this player performs a Block action on its own (but not as part of a Blitz action), this player may re-roll a single Both Down result.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -44440,6 +44489,8 @@
         <p>Once during their activation, after making an Agility test in order to Dodge, this player may modify the dice roll by +1 if their Strength characteristic is 4 or less, or by +2 if their Strength characteristic is 5 or more.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -44481,6 +44532,8 @@
         <p>Once per activation, instead of performing a Block action (either on its own or as part of a Blitz action), this player may perform a Breathe Fire Special action. When a player makes a Breathe Fire Special action they may choose one Standing opposition player they are Marking and roll a D6, applying a -1. modifier if the target has a ST of 5 or higher. On a 1, the player gets overeager, engulfing themself in flame and is immediately Knocked Down. On a 2-3, the opposition player ducks the gout of flame and nothing happens. On a 4+, the opposition player takes a ball of fire straight to the face and is immediately Placed Prone. However, if the roll is a natural 6, the potent pyro has taken its toll and the opposition player is Knocked Down instead. After the Breathe Fire Special action has been resolved, this player's activation immediately ends.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>Spike 18</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -44509,6 +44562,8 @@
         <p>When this player performs a Long Pass action or a Long Bomb Pass action, you may apply an additional +1 modifier to the Passing Ability test.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     None
@@ -44544,6 +44599,8 @@
         <p>This player may re-roll a failed Agility test when attempting to catch the ball.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -44641,6 +44698,8 @@
 <p>Finally, this player may use their Chainsaw when they perform a Foul action. Roll a D6 for kick-back as described above. Once again, an Armour roll is made against the player hit by the Chainsaw, adding +3 to the score.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -44694,6 +44753,8 @@
         <p>When you make an Armour roll against an opposition player that was Knocked Down as the result of a Block action performed by this player, a roll of 8+ before applying any modifiers will break their armour, regardless of their actual Armour Value.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -44768,6 +44829,8 @@
         <p>When this player performs a Long Pass action or a Long Bomb Pass action, you may choose to make the opposing coach re-roll a successful attempt to interfere with the pass.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -44797,6 +44860,8 @@
 <p>If this player has another Skill that allows them to perform more than one Block action, such as Frenzy, they must make a Dauntless roll before each separate Block action is performed.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -44868,6 +44933,8 @@
         <p>If this player suffers a Casualty result on the Injury table, there is a +1 modifier applied to all rolls made against this player on the Casualty table.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -44901,6 +44968,8 @@
         <p>During your opponent’s team turn(but not during your own team turn), any opposition players being Marked by this player cannot use the Guard skill.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -44936,6 +45005,8 @@
         <p>When this player commits a Foul action, either the Armour roll or Injury roll made against the victim may be modified by the amount shown in brackets. This modifier may be applied after the roll has been made.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -45001,6 +45072,8 @@
         <p>When an opposition player performs either a Pass action, a Throw Team-Mate action or a Throw Bomb Special action, or attempts to either interfere with a pass or to catch the ball, they must apply a -1 modifier to the test for each player on your team with this Skill that is within three squares of them, even if the player with this Skill is Prone, Stunned or has lost their Tackle Zone.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -45093,6 +45166,8 @@
 <p>Additionally, this player may apply a +1 modifier to any attempt to catch an accurate pass if they occupy the target square.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     None
@@ -45123,6 +45198,8 @@
 <p>If the opposition player was being Marked by more than one player with this Skill, only one player may use it.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     None
@@ -45146,6 +45223,8 @@
 <p>Additionally, this player may choose to use this Skill when they are the target of a Block action and a Stumble result is applied against them, as described on page 57.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -45482,6 +45561,8 @@
         <p>This player suffers a -1 penality to the dice roll when attempting to Rush.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>Spike 14</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -45517,6 +45598,8 @@
         <p>If this player is nominated as the target of a Block action (or a Special action granted by a Skill or Trait that can be performed instead of a Block action) and if they are in possession of the ball, they may immediately perform a Quick Pass action, interrupting the activation of the opposition player performing the Block action (or Special action) to do so. This Quick Pass action cannot cause a Turnover, but otherwise all of the normal rules for passing the ball apply. Once the Quick Pass action is resolved, the active player performs the Block action and their team turn continues.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -45552,6 +45635,8 @@
         <p>This player may apply a +1 modifier when they attempt to pick up or catch the ball, or when they attempt to interfere with a pass.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     None
@@ -45582,6 +45667,8 @@
 <p>This Skill cannot be used when this player is chain-pushed, against a player with the Ball &amp; Chain trait or against a player with the Juggernaut skill that performed the Block action as part of a Blitz.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -45624,6 +45711,8 @@
         <p>When an opposition player declares a Block action targeting this player (on its own or as part of a Blitz action), or any Special action that targets this player, their coach must first roll a D6, even if this player has lost their Tackle Zone. On a roll of 1, the player cannot perform the declared action and the action is wasted.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -45680,6 +45769,8 @@
 <p>A player with this Skill cannot also have the Grab skill.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -45831,6 +45922,8 @@
         <p>When this player performs a Move or Blitz action whilst in possession of the ball, they may choose to ‘drop’ the ball. The ball may be placed in any square the player vacates during their movement and does not bounce. No Turnover is caused.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     None
@@ -45855,6 +45948,8 @@
 <p>A player with this Skill cannot also have the Frenzy skill.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -45897,6 +45992,8 @@
 <p><ins class="errata">When a player performs a Block Action (including as part of a Blitz Action) this player can offer both offensive and defensive assists regardless of how many opposition players are Marking them.</ins></p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -45944,6 +46041,8 @@
         <p>When this player performs a Pass action (or a Throw Bomb action), the target square can be anywhere on the pitch and the range ruler does not need to be used. A Hail Mary pass is never accurate, regardless of the result of the Passing Ability test it will always be inaccurate at best. A Passing Ability test is made and can be re-rolled as normal in order to determine if the Hail Mary pass is wildly inaccurate or is fumbled. A Hail Mary pass cannot be interfered with. This Skill may not be used in a Blizzard.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     None
@@ -45979,6 +46078,8 @@
         <p>After a player with this Trait performs a Block action, they may immediately move one free square ignoring Tackle Zones so long as they are still Standing. They must ensure that after this free move, they are not Marked by or Marking any opposition players.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>Spike 16</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -46007,6 +46108,8 @@
         <p>When this player performs a Block action as part of a Blitz action (but not on its own), you may apply a +1 modifier to this player’s Strength characteristic. This modifier is applied before counting assists, before applying any other Strength modifiers and before using any other Skills or Traits.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -46082,6 +46185,8 @@
 <p>When this player wishes to perform a Hand-off action to a team-mate of the type listed, or attempts to perform a Pass action and the target square is occupied by a team-mate of the type listed, this player may refuse to do so. Roll a D6. On a roll of 1, this player refuses to perform the action and their activation comes to an end. Animosity does not extend to Mercenaries or Star Players.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -46145,6 +46250,8 @@
         <p>The Claws skill cannot be used when making an Armour roll against this player.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -46173,6 +46280,8 @@
         <p>When this player performs a Block action as part of a Blitz action (but not on its own), they may choose to treat a Both Down result as a Push Back result. In addition, when this player performs a Block action as part of a Blitz action, the target of the Block action may not use the Fend, Stand Firm or Wrestle skills.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -46261,6 +46370,8 @@
 <p><ins class="errata">This Skill may still be used if the player is Prone or has lost their Tackle Zone.</ins></p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -46363,6 +46474,8 @@
         <p>If this player is nominated to be the kicking player during a kick-off, you may choose to halve the result of the D6 to determine the number of squares that the ball deviates, rounding any fractions down.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     None
@@ -46387,6 +46500,8 @@
 <p>However, if the Kick Team-Mate Special action is fumbled, the kicked player is automatically removed from play and an Injury roll is made against them, treating a Stunned result as a KO’d result (note that, if the player that performed this action also has the Mighty Blow (+X) skill, the coach of the opposing team may use that Skill on this Injury roll). If the kicked player was in possession of the ball when removed from play, the ball will bounce from the square they occupied.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -46422,6 +46537,8 @@
         <p>A team which has one or more players with this Skill gains a single extra team re-roll, called a Leader re-roll. However, the Leader re-roll can only be used if there is at least one player with this Skill on the pitch (even if the player with this Skill is Prone, Stunned or has lost their Tackle Zone). If all players with this Skill are removed from play before the Leader re-roll is used, it is lost. The Leader re-roll can be carried over into extra time if it is not used, but the team does not receive a new one at the start of extra time. Unlike standard Team Re-rolls, the Leader Re-roll cannot be lost due to a Halfling Master Chef. Otherwise, the Leader re-roll is treated just like a normal team re-roll.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     None
@@ -46446,6 +46563,8 @@
 <p>A player with this Skill cannot also have the Pogo Stick trait.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -46490,6 +46609,8 @@
 <p><ins class="errata">This Trait must still be used if the player is Prone or has lost their Tackle Zone.</ins></p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -47025,6 +47146,8 @@
 <p>This Skill cannot be used with the Stab or Chainsaw traits.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -47301,6 +47424,8 @@
         <p>This player may re-roll any failed attempt to catch the ball. In addition, the Strip Ball skill cannot be used against this player.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     None
@@ -47324,6 +47449,8 @@
 <p>Note that choosing to use this Skill means this player will be unable to use the Frenzy skill during the same activation.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     None
@@ -47353,6 +47480,8 @@
         <p>A player with this Trait may not willingly give up the ball when in possession of it, and so may not make Pass actions, Hand-off actions, or use any other Skill or Trait that would allow them to relinquish possession of the ball. The only way they can lose possession of the ball is by being Knocked Down, Placed Prone, Falling Over or by the effect of a Skill, Trait, or special rule of an opposing model.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>Spike 17</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -47381,6 +47510,8 @@
         <p>This player may ignore any modifier(s)for being Marked when they attempt to perform a Pass action, attempt to catch the ball or attempt to interfere with a pass.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -47442,6 +47573,8 @@
         <p>This player is unable to take possession of the ball. They may not attempt to pick it up, to catch it, or attempt to interfere with a pass. Any attempt to do so will automatically fail, causing the ball to bounce. Should this player voluntarily move into a square in which the ball is placed, they cannot attempt to pick it up. The ball will bounce and a Turnover is caused as if this player had failed an attempt to pick up the ball.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -47517,6 +47650,8 @@
 <p>Additionally, during each Start of Drive sequence, after Step 2 but before Step 3, one Open player with this Skill on the receiving team may move up to three squares (regardless of their MA). This Skill may not be used if a touchback is caused when the kick deviates and does not allow the player to cross into their opponent’s half of the pitch.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -47563,6 +47698,8 @@
         <p>This player may re-roll a failed Passing Ability test when performing a Pass action.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -47681,6 +47818,8 @@
         <p>At the end of the opposition's team turn, roll a D6 for each Prone, non-Stunned team-mate within three squares of a standing player with this Trait. On a 5+, the Prone player may immediately stand up.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>Spike 14</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -47709,6 +47848,8 @@
         <p>When an opposition player is Knocked Down by this player as the result of a Block action (on its own or as part of a Blitz action), this player may immediately commit a free Foul action against the Knocked Down player. To use this Skill, this player must be Standing after the block dice result has been selected and applied, and must occupy a square adjacent to the Knocked Down player. After using this Skill, this player is Placed Prone and their activation ends immediately.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     None
@@ -47732,6 +47873,8 @@
 <p>If your team has the ‘Favoured of Nurgle’ special rule, a new ‘Rotter Lineman’ player, drawn from the Nurgle roster, can be placed immediately in the Reserves box of your team’s dugout (this may cause a team to have more than 16 players for the remainder of this game). During step 4 of the post-game sequence, this player may be permanently hired, exactly as you would a Journeyman player that had played for your team (see page 72).</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -47777,6 +47920,8 @@
 <p>A player with this Trait cannot also have the Leap skill.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -47818,6 +47963,8 @@
 <p>If the opposition player is being Marked by more than one player with this Mutation, only one player may use it.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -47916,6 +48063,8 @@ re-rolled.</li>
 <p>Once this player has attempted to use this Skill, they may not use a re-roll from any other source to re-roll this one dice.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     None
@@ -47954,6 +48103,8 @@ re-rolled.</li>
 <p>A player can only perform this Special action once per turn (i.e., Projectile Vomit cannot be used with Frenzy or Multiple Block).</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -48019,6 +48170,8 @@ re-rolled.</li>
 <p>Note that if you declared that this player would perform an action which can only be performed once per team turn and this player’s activation ended before the action could be completed, the action is considered to have been performed and no other player on your team may perform the same action this team turn.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -48088,6 +48241,8 @@ re-rolled.</li>
 <p><ins class="errata">This Trait may still be used if the player is Prone, Stunned, or has lost their Tackle Zone.</ins></p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -48305,6 +48460,8 @@ re-rolled.</li>
 <p><ins class="errata">This Trait may still be used if the player is Prone, Stunned, or has lost their Tackle Zone.</ins></p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -48443,6 +48600,8 @@ re-rolled.</li>
         <p>If this player performs a Quick Pass action, their activation does not have to end once the pass is resolved. If you wish and if this player has not used their full Movement Allowance, they may continue to move after resolving the pass.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -48472,6 +48631,8 @@ re-rolled.</li>
 <p><ins class="errata">This Skill may still be used if the player is Prone.</ins></p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -48507,6 +48668,8 @@ re-rolled.</li>
         <p>Should this player fumble a Pass action, the ball is not dropped, does not bounce from the square this player occupies, and no Turnover is caused. Instead, this player retains possession of the ball and their activation ends.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -48549,6 +48712,8 @@ re-rolled.</li>
         <p>When a drive in which this player took part ends, even ifthis player was not on the pitch at the end of the drive, thisplayer will be Sent-off for committing a Foul, as describedon page 63.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -48664,6 +48829,8 @@ re-rolled.</li>
 <p>A player may use this Skill any number of times per turn, during either team’s turn. If an opposition player is being Marked by more than one player with this Skill, only one player may use it.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -48721,6 +48888,8 @@ re-rolled.</li>
         <p>If this player is pushed back for any reason, they are not moved into a square chosen by the opposing coach. Instead you may choose any unoccupied square adjacent to this player. This player is pushed back into that square instead. If there are no unoccupied squares adjacent to this player, this Skill cannot be used.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -48863,6 +49032,8 @@ re-rolled.</li>
 <p><del>Additionally, the activation of this player does not have to end once the Foul has been committed. If you wish and if this player has not used their full Movement Allowance, they may continue to move after committing the Foul.</del></p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     None
@@ -48910,6 +49081,8 @@ re-rolled.</li>
         <p>When this player performs any action that includes movement, they may attempt to Rush three times, rather than the usual two.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -48973,6 +49146,8 @@ re-rolled.</li>
 </ul>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -49031,6 +49206,8 @@ re-rolled.</li>
         <p>This player may choose not to be pushed back, either as the result of a Block action made against them or by a chain-push. Using this Skill does not prevent an opposition player with the Frenzy skill from performing a second Block action if this player is still Standing after the first.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -49137,6 +49314,8 @@ re-rolled.</li>
         <p>When this player targets an opposition player that is in possession of the ball with a Block action (on its own or as part of a Blitz action), choosing to apply a Push Back result will cause that player to drop the ball in the square they are pushed back into. The ball will bounce from the square the player is pushed back into, as if they had been Knocked Down.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -49173,6 +49352,8 @@ re-rolled.</li>
 <p>A player that does not have the Throw Team-Mate trait cannot have this Skill.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -49228,6 +49409,8 @@ re-rolled.</li>
 <p><ins class="errata">This Trait must still be used if the player is Prone, Stunned, or has lost their Tackle Zone.</ins></p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -49469,6 +49652,8 @@ re-rolled.</li>
         <p>Once per team turn, during their activation, this player may re-roll the D6 when attempting to Rush.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -49522,6 +49707,8 @@ re-rolled.</li>
         <p>This player may re-roll any failed attempt to pick up the ball. In addition, the Strip Ball skill cannot be used against a player with this Skill.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -49624,6 +49811,8 @@ re-rolled.</li>
 <p><ins class="errata">When using Swarming, a coach may not set up more players with the Swarming trait onto the pitch than the number of friendly players with the Swarming trait that were already set up. So, if a team had 2 players with the Swarming trait already set up on the pitch, and then rolled for 3 more players to enter the pitch via Swarming, only a maximum of 2 more Swarming players could be set up on the pitch.</ins></p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -49652,6 +49841,8 @@ re-rolled.</li>
         <p>If this player is thrown by a team-mate, as described on page 52, they do not scatter before landing as they normally would. Instead, you may place the Throw-in template over the player, facing towards either End Zone or either sideline as you wish. The player then moves from the target square D3 squares in a direction determined by rolling a D6 and referring to the Throw-in template.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -49681,6 +49872,8 @@ re-rolled.</li>
 <p>Additionally, when an opposition player is targeted by a Block action performed by a player with this Skill, that player cannot use the Dodge skill if a Stumble result is applied against them.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -49752,6 +49945,8 @@ re-rolled.</li>
 <p>If you declared that this player would perform any action that includes movement (Pass, Hand-off, Blitz or Foul) prior to them becoming Rooted, they may complete the action if possible. If they cannot, the action is considered to have been performed and no other player on your team may perform the same action this team turn.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -49796,6 +49991,8 @@ re-rolled.</li>
 <p>A player may use this Skill any number of times per turn, during either team’s turn. If an opposition player is being Marked by more than one player with this Skill, only one player may use it.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -49831,6 +50028,8 @@ re-rolled.</li>
         <p>When an Injury roll is made against this player (even if this player is Prone, Stunned or has lost their Tackle Zone), they can only be KO’d on a roll of 9, and will treat a roll of 8 as a Stunned result. If this player also has the Stunty trait, they can only be KO’d on a roll of 8, and will treat a roll of 7 as a Stunned result. All other results are unaffected.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -50122,6 +50321,8 @@ re-rolled.</li>
         <p>If this player also has a Strength characteristic of 5 or more, they may perform a Throw Team-Mate action, as described on page 52, allowing them to throw a team-mate with the Right Stuff trait.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -50250,6 +50451,8 @@ re-rolled.</li>
 <p><ins class="errata">This Trait may still be used if the player is Prone or has lost their Tackle Zone.</ins></p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -50295,6 +50498,8 @@ re-rolled.</li>
         <p>This player may apply a +1 modifier to any Agility tests they make in order to Dodge. However, if an opposition player dodges into a square within the Tackle Zone of this player, this player does not count as Marking the moving player for the purposes of calculating Agility test modifiers.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -50345,6 +50550,8 @@ re-rolled.</li>
         <p>When this player is about to be hit by a Block action or a Special action that replaces a Block action (with the exception of a Block action caused by the Ball and Chain Move Special action), before determining how many dice are rolled, they may be removed from the pitch and placed in any other unoccupied square adjacent to the player performing the Block action. The Block action then takes place as normal. If the player using this Trait is holding the ball and places themselves in the opposition End Zone, the Block action will still be fully resolved before any touchdown is resolved.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>Spike 17</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -50373,6 +50580,8 @@ re-rolled.</li>
         <p>This player may apply a +1 modifier to the Agility test when they attempt to Dodge.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     None
@@ -50415,6 +50624,8 @@ re-rolled.</li>
 <p>If you declared that this player would perform an action which can only be performed once per team turn and this player’s activation ended before the action could be completed, the action is considered to have been performed and no other player on your team may perform the same action this team turn.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -50478,6 +50689,8 @@ re-rolled.</li>
 <p>Finally, this player ignores the Cloud Burster skill.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     None
@@ -50500,6 +50713,8 @@ re-rolled.</li>
         <p>This player may use this Skill when a Both Down result is applied, either when they perform a Block action or when they are the target of a Block action. Instead of applying the Both Down result as normal, and regardless of any other Skills either player may possess, both players are Placed Prone.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Player positions:</dt>
             <dd>
                                     <ul>
@@ -50644,6 +50859,8 @@ re-rolled.</li>
         <p>The Badlands Brawl is home to a great many Greenskin and Ogre teams. Unsurprisingly, Blood Bowl in the Badlands is a brutal, violent and extremely dishonest affair, but these are virtues that make it ever popular with the fans!</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Teams:</dt>
             <dd>
                                     <ul>
@@ -50793,6 +51010,8 @@ re-rolled.</li>
         <p>One of the oldest leagues in the known world, the Elven Kingdoms League prides itself on upholding the traditions of classically-correct Blood Bowl. Many find it dull but, in terms of elegance and expertise, it is second to none.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Teams:</dt>
             <dd>
                                     <ul>
@@ -50917,6 +51136,8 @@ re-rolled.</li>
         <p>Traditionally, Halflings have been associated more closely with the culinary arts than the world of professional sport. In recent years this has changed greatly, and the Thimble Cup has become a mainstay on the Blood Bowl calendar.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Teams:</dt>
             <dd>
                                     <ul>
@@ -51079,6 +51300,8 @@ re-rolled.</li>
         <p>The Lustrian Superleague is the oldest competition in the world, and home to many of the sport’s most ancient teams. For millennia it was closed to all except Lizardmen teams, but in recent years has opened its ranks to welcome other races.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Teams:</dt>
             <dd>
                                     <ul>
@@ -51217,6 +51440,8 @@ re-rolled.</li>
         <p>Since the collapse of the NAF, Blood Bowl in the Old World has struggled. But in recent years the sport’s fortunes have improved, largely thanks to the founding of the Old World Classic, a competition that draws together many minor leagues.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Teams:</dt>
             <dd>
                                     <ul>
@@ -51392,6 +51617,8 @@ re-rolled.</li>
         <p>For many decades the Sylvanian Spotlight was the only place most Undead teams could hope to compete. In recent years, the development of sun protection magic has changed this, allowing the athletically inclined Undead to play at anytime, anywhere!</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Teams:</dt>
             <dd>
                                     <ul>
@@ -51524,6 +51751,8 @@ re-rolled.</li>
         <p>A secretive league that, until only recently, many pundits refused to believe even existed! The Underworld Challenge hosts many strange and diverse teams, the likes of which are rarely seen in daylight. For a horrifying spectacle, it is second to none!</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Teams:</dt>
             <dd>
                                     <ul>
@@ -51672,6 +51901,8 @@ re-rolled.</li>
         <p>Played on high peaks under clear skies, the Superleague is the pride of the Dwarfen realm. Games last many hours as rules are carefully checked and checked again, ensuring that the purity of Roze-El’s sacred work is maintained. Interestingly, in Dwarfish ‘venerable’ and ‘dull’ are spelled the same.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Teams:</dt>
             <dd>
                                     <ul>
@@ -51791,6 +52022,8 @@ purchase certain Inducements for a reduced price, as
 noted in the description of that Inducement.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Teams:</dt>
             <dd>
                                     <ul>
@@ -51870,6 +52103,8 @@ noted in the description of that Inducement.</p>
 <p>A team with this special rule cannot change its alignment.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Teams:</dt>
             <dd>
                                     None
@@ -51933,6 +52168,8 @@ noted in the description of that Inducement.</p>
         <p>See Favoured of…</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Teams:</dt>
             <dd>
                                     <ul>
@@ -52056,6 +52293,8 @@ noted in the description of that Inducement.</p>
         <p>See Favoured of…</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>Spike 13</dd>
             <dt>Teams:</dt>
             <dd>
                                     <ul>
@@ -52196,6 +52435,8 @@ noted in the description of that Inducement.</p>
         <p>See Favoured of…</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Teams:</dt>
             <dd>
                                     <ul>
@@ -52327,6 +52568,8 @@ noted in the description of that Inducement.</p>
         <p>See Favoured of…</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Teams:</dt>
             <dd>
                                     <ul>
@@ -52449,6 +52692,8 @@ noted in the description of that Inducement.</p>
         <p>See Favoured of…</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Teams:</dt>
             <dd>
                                     <ul>
@@ -52571,6 +52816,8 @@ noted in the description of that Inducement.</p>
         <p>See Favoured of…</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>Spike 18</dd>
             <dt>Teams:</dt>
             <dd>
                                     <ul>
@@ -52714,6 +52961,8 @@ noted in the description of that Inducement.</p>
 </ul>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Teams:</dt>
             <dd>
                                     <ul>
@@ -52807,6 +53056,8 @@ their players is Sent-off for committing a Foul, as long as
 they haven’t been sent off themselves.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>BB2020</dd>
             <dt>Teams:</dt>
             <dd>
                                     <ul>
@@ -52877,6 +53128,8 @@ they haven’t been sent off themselves.</p>
 <p>Additionally, just like the Head Coach of any other team, a Vampire Lord can Argue the Call when one of their players is Sent-off for committing a Foul, as long as they haven't been Sent-off themselves.</p>
 
         <dl>
+            <dt>Source</dt>
+            <dd>Spike 16</dd>
             <dt>Teams:</dt>
             <dd>
                                     <ul>
