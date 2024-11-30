@@ -544,6 +544,26 @@
             }
         }
 
+        @media print {
+            body {
+                padding: 0;
+                background: none;
+            }
+            .page {
+                padding-inline: 0;
+                margin-inline: 0;
+                box-shadow: none;
+                border-block-start: 1px solid var(--color-zinc-300);
+            }
+            details::details-content { display: contents; }
+            .table-wrapper {}
+            dl, ul, ol, p, .table-wrapper, ins.block, del.block {
+                margin-block-start: 1rem;
+                margin-block-end: 1rem;
+                max-width: none;
+            }
+        }
+
     </style>
 </head>
 <body class="{{ bodyClass|default }}">
