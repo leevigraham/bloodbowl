@@ -14,6 +14,8 @@
     <div>
         {{ skill.ruleBookDescription|markdown_to_html }}
         <dl>
+            <dt>Source</dt>
+            <dd>{{ skill.source }}</dd>
             <dt>Player positions:</dt>
             <dd>
                 {% if skill.playerPositions|length %}

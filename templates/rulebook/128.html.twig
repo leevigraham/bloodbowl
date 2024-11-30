@@ -1,1 +1,7 @@
 {{ include('_partials/team.html.twig', {team: data.teams['Wood Elf']}) }}
+
+<h4>Additional Teams</h4>
+<p>These teams have been added in supplements and are not included in the core rules.</p>
+{% for team in data.teams|filter(t => t.source != 'BB2020') %}
+    {{ include('_partials/team.html.twig', { team }) }}
+{% endfor %}

@@ -11,6 +11,7 @@ class SpecialRule
         public SpecialRuleCategory $category,
         public string              $name,
         public string              $ruleBookDescription,
+        public string              $source,
         public array               $teams = [],
         public array               $starPlayerPositions = [],
     )

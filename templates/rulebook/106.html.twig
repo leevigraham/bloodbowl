@@ -1,12 +1,21 @@
 <h5>Team Special Rules</h5>
 <p>Some teams may have one or more of the following special rules. These detail unique characteristics that set the team apart from others, be it the ability to reanimate the dead or the blessings of a patron Chaos deity.</p>
 <p>Some teams may have one or more of the following special rules:</p>
-
 {% for specialRule in [
     'Bribery and Corruption',
     'Favoured of…',
+    'Favoured of Chaos Undivided',
+    'Favoured of Nurgle',
+    'Favoured of Tzeentch',
+    'Favoured of Slaanesh',
     'Low Cost Linemen',
     'Masters of Undeath',
 ] %}
 {{ include('_partials/special-rule.html.twig', { specialRule: data.specialRules[specialRule]}) }}
+{% endfor %}
+
+<h4>Additional Team Special Rules</h4>
+<p>These Team Special Rules have been added in supplements and are not included in the core rules.</p>
+{% for specialRule in data.specialRules|filter(t => t.source != 'BB2020') %}
+    {{ include('_partials/special-rule.html.twig', { specialRule }) }}
 {% endfor %}

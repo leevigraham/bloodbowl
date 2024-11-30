@@ -8,6 +8,8 @@
     <div>
         {{ specialRule.ruleBookDescription|markdown_to_html }}
         <dl>
+            <dt>Source</dt>
+            <dd>{{ specialRule.source }}</dd>
             <dt>Teams:</dt>
             <dd>
                 {% if specialRule.teams|length %}

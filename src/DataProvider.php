@@ -63,6 +63,7 @@ class DataProvider
                 },
                 $record['Name'],
                 $record['Rule Book Description'],
+                $record['Source'],
             );
             $this->specialRules[$specialRule->name] = $specialRule;
         }
@@ -131,6 +132,7 @@ class DataProvider
                 $playerSkillCategory,
                 $record['Rule Book Description'],
                 (bool)$record['Compulsory'],
+                $record['Source'],
             );
             $this->playerSkills[$playerSkill->name] = $playerSkill;
         }
@@ -147,6 +149,7 @@ class DataProvider
                 $record['Name'],
                 $record['Rule Book Description'],
                 (bool)$record['Compulsory'],
+                $record['Source'],
             );
             $this->playerTraits[$playerTrait->name] = $playerTrait;
         }

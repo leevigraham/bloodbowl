@@ -8,3 +8,9 @@
 ] %}
     {{ include('_partials/star-player.html.twig', {player: data.starPlayerPositions[starPlayer]}) }}
 {% endfor %}
+
+<h4>Additional Star Players</h4>
+<p>These Star Players have been added in supplements and are not included in the core rules.</p>
+{% for player in data.starPlayerPositions|filter(t => t.source != 'BB2020') %}
+    {{ include('_partials/star-player.html.twig', { player }) }}
+{% endfor %}

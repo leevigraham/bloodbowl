@@ -15,6 +15,7 @@ class PlayerSkill
         public PlayerSkillCategory $category,
         public string $ruleBookDescription,
         public bool $compulsory,
+        public string $source,
         public array $playerPositions = [],
         public array $starPlayerPositions = [],
     )

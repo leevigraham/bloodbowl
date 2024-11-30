@@ -9,3 +9,8 @@
 ] %}
     {{ include('_partials/skill-or-trait.html.twig', { skill: data.playerSkillsAndTraits[skill] }) }}
 {% endfor %}
+<h4>Additional Traits</h4>
+<p>These traits have been added in supplements and are not included in the core rules.</p>
+{% for trait in data.playerSkillsAndTraits|filter(t => t.source != 'BB2020') %}
+    {{ include('_partials/skill-or-trait.html.twig', { skill: trait }) }}
+{% endfor %}
