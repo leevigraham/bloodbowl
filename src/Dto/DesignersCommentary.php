@@ -12,8 +12,7 @@ class DesignersCommentary
         public string $answer,
         public ?string $team = null,
         public ?string $starPlayer = null,
-        public ?string $skill = null,
-        public ?string $trait = null,
+        public ?array $skillsAndTraits = [],
     ) {
     }
 }

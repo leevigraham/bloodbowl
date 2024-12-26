@@ -54,5 +54,7 @@
                 {% endif %}
             </dd>
         </dl>
+        {% set designersCommentary = data.designersCommentary|filter(c => skill in c.skillsAndTraits) %}
+        {{ include('_partials/designers-commentary.html.twig', {designersCommentary}) }}
     </div>
 </details>

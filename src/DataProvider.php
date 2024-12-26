@@ -318,8 +318,9 @@ class DataProvider
         ;
 
         $designersCommentaryRecords = iterator_to_array($designersCommentaryRecords);
-        foreach ($designersCommentaryRecords as $record) {
+        foreach ($designersCommentaryRecords as $rowCount => $record) {
             foreach(explode(" & ", $record['Page Ref']) as $pageRef) {
+                ['skills' => $skills, 'traits' => $traits] = $parseSkillsAndTraits($record['Skills and Traits']);
                 $designersCommentary = new DesignersCommentary(
                     $record['Source'],
                     $record['Document Ref'],
@@ -328,10 +329,10 @@ class DataProvider
                     $record['Answer'],
                     $record['Team'],
                     $record['Star Player'],
+                    array_merge($skills, $traits),
                 );
                 $this->designersCommentary[] = $designersCommentary;
             }
-
         }
 
         $inducementRecords = Reader::createFromPath("$srcDir/inducements.csv")
